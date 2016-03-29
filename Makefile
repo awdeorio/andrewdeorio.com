@@ -7,8 +7,10 @@ serve:
 	jekyll serve --watch
 
 # Test for W3C compliance
+URLS := $(shell find _site -maxdepth 2 -name '*.html')
 test:
-	open "https://validator.w3.org/nu/?doc=http%3A%2F%2Fandrewdeorio.com%2F"
+	open "https://validator.w3.org/nu/?doc=http://andrewdeorio.com/"
+#	$(foreach URL,$(URLS), echo $(URL) &&) true;
 
 # copy files to web server
 sync: _site
