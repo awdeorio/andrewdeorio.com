@@ -1,0 +1,46 @@
+---
+layout: default
+title: Andrew DeOrio
+---
+
+<div class="left">
+<a href="https://www.flickr.com/photos/eng-portraits/12619055174/sizes/l/" target="_blank">
+<img width=150 alt="headshot" src="/assets/headshot.jpg">
+</a><br>
+<small>
+<a href=mailto:awdeorio@umich.edu>awdeorio@umich.edu</a><br>
+<a href="contact.html">contact</a>
+</small>
+</div>
+
+<div class="right">
+Andrew DeOrio is a lecturer at the University of Michigan and a consultant for web, machine learning and hardware projects.  His research interests are in ensuring the correctness of computer systems, including medical devices, internet of things (IOT) devices, and digital hardware.  In addition to teaching software and hardware courses, he teaches Creative Process and works with students on technology-driven creative projects.  Andrew also plays music, makes fire organs, and is trying to visit every U.S. National Park.
+</div>
+
+<div class="content">
+<!-- Meet the Faculty Video -->
+<iframe
+  width="480" height="270"
+  src="http://www.youtube.com/embed/u96I_5fcB6A?autoplay=0&amp;controls=2&amp;showinfo=0&amp;rel=0"
+  allowfullscreen>
+</iframe>
+</div>
+
+
+{% for post in site.posts limit:3 %}
+<div class="news-container">
+  <div class="news-title">
+  <a href="{{ post.url }}">{{ post.title }}</a><br>
+  </div>
+  {% if post.thumbnail %}
+  <div class="news-thumb">
+    <a href="{{ post.url }}">
+    <img src="{{ post.thumbnail }}" alt="{{ post.url }}" style="height:100px"/>
+    </a>
+  </div>
+	{% endif %}
+  <div class="news-content">
+  {{ post.excerpt | strip_html | truncatewords:50}}<br>
+  </div>
+</div>
+{% endfor %}

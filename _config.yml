@@ -1,0 +1,5 @@
+name: Andrew DeOrio
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+exclude: ['Makefile', 'README.md', 'LICENSE', '.gitignore']
+include: ['.htaccess']
