@@ -14,6 +14,7 @@ test:
 
 # copy files to web server
 sync: _site
+	jekyll build
 	find . -type f -exec chmod 644 {} \;
 	find . -type d -exec chmod 755 {} \;
 	rsync -rvp --delete --checksum _site/ awdeorio@web.eecs.umich.edu:public_html/
