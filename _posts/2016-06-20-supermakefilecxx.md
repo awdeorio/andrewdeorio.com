@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Super Makefile CXX"
-date: 2016-06-21
-thumbnail: /assets/2016-06-21-thumbnail.png
+date: 2016-06-20
+thumbnail: /assets/2016-06-20-thumbnail.png
 ---
 
 A flexible Makefile for C++ programs, including testing, debugging, leak checking, profiling, and coverage.
