@@ -10,4 +10,4 @@ Testing an Electric Pyrophone prototype.  I used contact microphones made from d
 <img width="320" src="/assets/2014-04-09-Electric-Pyrophone.jpg">
 Photo: Reid Hamilton
 
-For more on pyrophones, see [this blog post](/blog/2012/04/08/Pyrophone/).
+For more on pyrophones, see [this blog post](/blog/2012/04/08/Pyrophone).

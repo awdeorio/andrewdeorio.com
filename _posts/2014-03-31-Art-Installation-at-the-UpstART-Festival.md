@@ -5,7 +5,7 @@ date: 2014-03-31
 thumbnail: /assets/2014-03-31-thumbnail.png
 ---
 
-Come to our Art Installation at the [UpstART Festival](http://arts.umich.edu/upstartfest/schedule.php) March 31 - April 2, 2014 on the [Ingalls Mall](https://www.google.com/maps/place/Ingalls+Mall/@42.279509,-83.738341,17z/data=!3m1!4b1!4m2!3m1!1s0x883cae4100e47d0f:0x60e55b28ca4071bc).
+Come to our Art Installation at the UpstART Festival March 31 - April 2, 2014 on the [Ingalls Mall](https://www.google.com/maps/place/Ingalls+Mall/@42.279509,-83.738341,17z/data=!3m1!4b1!4m2!3m1!1s0x883cae4100e47d0f:0x60e55b28ca4071bc).
 
 Human Circuit is an interactive experience with technology and art. Software coordinates a low-voltage electrical circuit, a camera and an internet connection. The electrical circuit is incomplete until people join together to form a conductor, triggering a snapshot that becomes part of a photostream. Human Circuit enables a participant to be the photographer, the camera, and the subject at the same time.
 

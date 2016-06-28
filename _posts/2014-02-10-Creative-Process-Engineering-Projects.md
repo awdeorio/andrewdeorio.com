@@ -5,7 +5,7 @@ date: 2014-02-10
 thumbnail: /assets/2014-02-10-braille.jpg
 ---
 
-Check out some of the engineering mini-projects from Creative Process (UARTS 250).  Students used the [Scratch](http://scratch.mit.edu/) programming language and [Makey Makeys](http://makeymakey.com/) to solve a problem of their choice.
+Check out some of the engineering mini-projects from Creative Process (UARTS 250).  Students used the [Scratch](https://scratch.mit.edu/) programming language and [Makey Makeys](http://makeymakey.com/) to solve a problem of their choice.
 
 The problem: learning braille.  This braille learning tool reads letters aloud as you move your finger across them.  Doug Nordman.
 
