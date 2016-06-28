@@ -23,6 +23,10 @@ clean:
 	rm -vrf _site/
 	find . -name '*~' -exec rm -v {} \;
 
+# Check for broken links
+checklinks:
+	open "https://validator.w3.org/checklink?uri=http%3A%2F%2Fandrewdeorio.com&hide_type=all&recursive=on&depth=150&check=Check"
+
 # These targets do not create any files
 .PHONY : serve sync clean
 
