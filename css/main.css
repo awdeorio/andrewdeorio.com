@@ -2,6 +2,13 @@ body {
   max-width: 550px;
   margin:0 auto; /* centering */
 }
+
+img {
+    /* resize images */
+    width: 100%;
+    height: auto;
+}
+
 nav ul, footer ul {
   font-size: 0.8em;
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -94,4 +101,9 @@ div.news-content {
 }
 div.news-title {
   padding: 9px;
+}
+
+img.icon {
+    width: 20px;
+    margin-right:10px;
 }

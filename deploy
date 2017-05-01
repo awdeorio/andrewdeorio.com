@@ -2,6 +2,6 @@
 set -e
 set -x
 jekyll build
-find . -type f -exec chmod 644 {} \;
-find . -type d -exec chmod 755 {} \;
+find _site/ -type f -exec chmod 644 {} \;
+find _site/ -type d -exec chmod 755 {} \;
 rsync -rvp --delete --checksum _site/ awdeorio@web.eecs.umich.edu:public_html/
