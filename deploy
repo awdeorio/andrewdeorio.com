@@ -1,11 +1,29 @@
 #!/bin/bash
+# deploy - build and copy andrewdeorio.com source files
+#
+# Andrew DeOrio <awdeorio@umich.edu>
+
+
+# Stop on errors and print commands
 set -e
 set -x
+
+# Build
 jekyll build
+
+# Validate HTML
+echo FIXME html5validator --root _site/
+
+# Fix permissions
 find _site/ -type f -exec chmod 644 {} \;
 find _site/ -type d -exec chmod 755 {} \;
+
+# Copy to server
 rsync \
-  -rvp \
+  --dry-run \
+  --recursive \
+  --verbose \
+  --perms \
   --delete \
   --checksum \
   _site/ \
