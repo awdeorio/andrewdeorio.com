@@ -107,3 +107,10 @@ img.icon {
     height: 20px;
     margin-right:10px;
 }
+
+post-thumbnail {
+    height: 100px;
+    float: left;
+    padding-right: 1em;
+    align: center;
+}

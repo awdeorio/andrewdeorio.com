@@ -6,17 +6,17 @@ title: Blog | Andrew DeOrio
 {% for post in site.posts %}
 <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}<br>
   {% if post.thumbnail %}
-	<img src="{{ post.thumbnail }}" style="height: 100px; float:left; padding-right:1em" align="center" />
+	<img class="post-thumbnail" src="{{ post.thumbnail }}" alt="thumbnail">
 	{% endif %}
 </a>
-  {{ post.excerpt | strip_html | truncatewords:50}}
-  <br style="clear: both;" />
-  <br>
+{{ post.excerpt | strip_html | truncatewords:50}}
+<br style="clear: both;" />
+<br>
 {% endfor %}
 
 <p>
-<a href="/blog/atom.xml">
-<img class="icon" src="/assets/rss-256.png">
-Subscribe
-</a>
+  <a href="/blog/atom.xml">
+    <img class="icon" alt="RSS icon" src="/assets/rss-256.png">
+    Subscribe
+  </a>
 </p>
