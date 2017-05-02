@@ -8,7 +8,8 @@ thumbnail: /assets/2014-09-14-thumbnail.jpg
 Pay a visit to the creative world of computer science and engineering with Dr. Andrew DeOrio.  In this hands-on session, you will be creative makers and problem solvers, engineering a solution to a problem.  We will use computing devices called Makey-makeys to interface a computer to the real world.  By the end of the session, you will have a working demo and an experience with the creative side of engineering.  Please bring a laptop.
 
 Photos from the workshop at the University of Michigan [Living Arts community](http://www.livingarts.umich.edu/).  Photos by Mark Jones.<br>
-<object width="400" height="300">
+
+<object width="400" height="300" type="application/x-shockwave-flash">
   <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=/photos/100609247@N06/sets/72157647301093029/show/&page_show_back_url=/photos/100609247@N06/sets/72157647301093029/&user_id=100609247@N06"></param>
   <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=140556"></param>
   <param name="allowFullScreen" value="true"></param>

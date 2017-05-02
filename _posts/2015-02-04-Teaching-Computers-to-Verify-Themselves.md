@@ -10,5 +10,5 @@ Correctness is the driving force behind my research.  Incorrect operation of sil
 **Slides**<br>
 <a href="/assets/Teaching_Computers_to_Verify_Themselves.pdf" target="_blank">
 Teaching_Computers_to_Verify_Themselves.pdf<br>
-<img src="/assets/2015-02-04-Teaching-Computers-to-Verify-Themselves-thumbnail.png">
+<img src="/assets/2015-02-04-Teaching-Computers-to-Verify-Themselves-thumbnail.png" alt="thumbnail">
 </a>

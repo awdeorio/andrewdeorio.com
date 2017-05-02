@@ -13,5 +13,5 @@ Data abstraction helps computer scientists model complex phenomena and makes pro
 **Slides**<br>
 <a href="/assets/data_abstraction.pdf" target="_blank">
 data_abstraction.pdf<br>
-<img src="/assets/2014-12-05-Data-Abstraction-thumbnail.png">
+<img src="/assets/2014-12-05-Data-Abstraction-thumbnail.png" alt="thumbnail">
 </a>
