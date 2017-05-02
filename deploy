@@ -12,7 +12,7 @@ set -x
 jekyll build
 
 # Validate HTML
-echo FIXME html5validator --root _site/
+html5validator --root _site/
 
 # Fix permissions
 find _site/ -type f -exec chmod 644 {} \;
