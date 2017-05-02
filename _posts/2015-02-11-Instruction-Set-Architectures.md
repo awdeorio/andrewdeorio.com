@@ -10,5 +10,5 @@ An Instruction Set Architecture (ISA) is a language that hardware and software u
 **Slides**<br>
 <a href="/assets/Instruction_Set_Architectures.pdf" target="_blank">
 Instruction_Set_Architectures.pdf<br>
-<img src="/assets/2015-02-11-Instruction-Set-Architectures-thumbnail.png">
+<img src="/assets/2015-02-11-Instruction-Set-Architectures-thumbnail.png" alt="thumbnail">
 </a>
