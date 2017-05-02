@@ -118,7 +118,7 @@ img.icon {
     margin-right:10px;
 }
 
-post-thumbnail {
+img.post-thumbnail {
     height: 100px;
     float: left;
     padding-right: 1em;
