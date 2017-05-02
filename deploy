@@ -17,6 +17,9 @@ jekyll build
 # Validate HTML
 html5validator --root _site/
 
+# Check for bad links
+linkchecker _site/
+
 # Fix permissions
 find _site/ -type f -exec chmod 644 {} \;
 find _site/ -type d -exec chmod 755 {} \;
@@ -34,3 +37,6 @@ rsync \
   --checksum \
   _site/ \
   awdeorio@web.eecs.umich.edu:public_html/
+
+# Check for bad links
+linkchecker http://andrewdeorio.com/
