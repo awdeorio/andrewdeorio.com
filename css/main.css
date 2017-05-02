@@ -124,3 +124,8 @@ img.post-thumbnail {
     padding-right: 1em;
     align: center;
 }
+
+span.new {
+    font-weight: bold;
+    color: blue;
+}
