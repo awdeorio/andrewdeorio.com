@@ -5,8 +5,8 @@ body {
 
 img {
     /* resize images */
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 nav ul, footer ul {
@@ -104,6 +104,6 @@ div.news-title {
 }
 
 img.icon {
-    width: 20px;
+    height: 20px;
     margin-right:10px;
 }
