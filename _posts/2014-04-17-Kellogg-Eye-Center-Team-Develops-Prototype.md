@@ -13,8 +13,8 @@ Click Here for a full description of the team\'s progress this term.</a> The pro
 Photos of the multidisciplinary design team working with the Kellogg Eye Center.  Photos by Sarah Nesbitt.
 
 <object width="400" height="300" type="application/x-shockwave-flash">
-  <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fmdp-umich%2Fsets%2F72157642460724465%2Fshow%2F&page_show_back_url=%2Fphotos%2Fmdp-umich%2Fsets%2F72157642460724465%2F&set_id=72157642460724465&jump_to="></param>
-  <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=140556"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=140556" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fmdp-umich%2Fsets%2F72157642460724465%2Fshow%2F&page_show_back_url=%2Fphotos%2Fmdp-umich%2Fsets%2F72157642460724465%2F&set_id=72157642460724465&jump_to=" width="400" height="300"></embed>
+  <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fmdp-umich%2Fsets%2F72157642460724465%2Fshow%2F&page_show_back_url=%2Fphotos%2Fmdp-umich%2Fsets%2F72157642460724465%2F&set_id=72157642460724465&jump_to="/>
+  <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=140556"/>
+  <param name="allowFullScreen" value="true"/>
+  <embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=140556" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fmdp-umich%2Fsets%2F72157642460724465%2Fshow%2F&page_show_back_url=%2Fphotos%2Fmdp-umich%2Fsets%2F72157642460724465%2F&set_id=72157642460724465&jump_to=" width="400" height="300"/>
 </object>

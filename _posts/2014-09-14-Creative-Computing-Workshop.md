@@ -10,10 +10,10 @@ Pay a visit to the creative world of computer science and engineering with Dr. A
 Photos from the workshop at the University of Michigan [Living Arts community](http://www.livingarts.umich.edu/).  Photos by Mark Jones.<br>
 
 <object width="400" height="300" type="application/x-shockwave-flash">
-  <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=/photos/100609247@N06/sets/72157647301093029/show/&page_show_back_url=/photos/100609247@N06/sets/72157647301093029/&user_id=100609247@N06"></param>
-  <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=140556"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=140556" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=/photos/100609247@N06/sets/72157647301093029/show/&page_show_back_url=/photos/100609247@N06/sets/72157647301093029/&user_id=100609247@N06&jump_to="width="400" height="300"></embed>
+  <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=/photos/100609247@N06/sets/72157647301093029/show/&page_show_back_url=/photos/100609247@N06/sets/72157647301093029/&user_id=100609247@N06"/>
+  <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=140556"/>
+  <param name="allowFullScreen" value="true"/>
+  <embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=140556" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=/photos/100609247@N06/sets/72157647301093029/show/&page_show_back_url=/photos/100609247@N06/sets/72157647301093029/&user_id=100609247@N06&jump_to="width="400" height="300"/>
 </object>
 
 [Slides available here ![Creative Computing image](/assets/2014-09-14-thumbnail.jpg)](/assets/2014-09-14-Creative-Computing-slides.pdf)
