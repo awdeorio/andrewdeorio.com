@@ -118,6 +118,12 @@ img.icon {
     margin-right:10px;
 }
 
+img.research-thumbnail {
+    height: 60px;
+    float: right;
+    border: 0px;
+}
+
 img.post-thumbnail {
     height: 100px;
     float: left;
