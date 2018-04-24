@@ -25,22 +25,3 @@ Andrew DeOrio is a lecturer at the University of Michigan and a consultant for w
   allowfullscreen>
 </iframe>
 </div>
-
-
-{% for post in site.posts limit:3 %}
-<div class="news-container">
-  <div class="news-title">
-  <a href="{{ post.url }}">{{ post.title }}</a><br>
-  </div>
-  {% if post.thumbnail %}
-  <div class="news-thumb">
-    <a href="{{ post.url }}">
-    <img src="{{ post.thumbnail }}" alt="{{ post.url }}" style="height:100px"/>
-    </a>
-  </div>
-	{% endif %}
-  <div class="news-content">
-  {{ post.excerpt | strip_html | truncatewords:50}}<br>
-  </div>
-</div>
-{% endfor %}
