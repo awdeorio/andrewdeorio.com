@@ -5,8 +5,7 @@
 
 
 # Stop on errors and print commands
-set -e
-set -x
+set -Eeuxo pipefail
 
 # Clean
 rm -rf _site/
