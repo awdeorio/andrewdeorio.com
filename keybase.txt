@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/awdeorio
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andrewdeorio.com
+  * I am awdeorio (https://keybase.io/awdeorio) on keybase.
+  * I have a public key with fingerprint 30D7 4C14 63FA A2FC 1627  4342 BB62 01BA 0753 0070
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010189e3f5b86f238a3f8c7128013ab29a8a55a29efa28606b8c4a2280e564c49cd50a",
+      "fingerprint": "30d74c1463faa2fc16274342bb6201ba07530070",
+      "host": "keybase.io",
+      "key_id": "bb6201ba07530070",
+      "kid": "010189e3f5b86f238a3f8c7128013ab29a8a55a29efa28606b8c4a2280e564c49cd50a",
+      "uid": "da978ab41d7050df0bda78180e638b19",
+      "username": "awdeorio"
+    },
+    "service": {
+      "hostname": "andrewdeorio.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1588090611,
+  "expire_in": 157680000,
+  "prev": "9624b9492b45e8b3e012e6d866cba4f5b032334ad43aa9067df6ed8655a1123f",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkmtQVVUYhg9yIEQEnUHLBir3oASi7vuFi8RoRwih0WEIATmtvffasOFwNuxz
+gLhORJSXEkgmEQ7JVCNCgAWDchFHK0UjqxkNsSiFKbogaAaTImXrMPKvn60/a9b3
+Pe+73vXNql7uavB08RtuHc3M27zdZeg30ZB2PPFeMSZqciEWWoxlwYUNWmRos5uz
+VBkLxXACJ3gBUgoj8qxCUjygFF7iCJLHCQqIpAB4wDCAFKACSJ7FWZGXaECiNmRY
+WqIFSWZwgIVgimpNh3qOrlrtyJbCZY6WCJqlFABIRSJYkqMpmhRFlsQJEeAcQ+E4
+hyNhhmZzKlA4EdjgJlVDNXQwL8T7D/5/zp23YCcDgeOBSBMyhzO4rOCiDDieQDRL
+8SIhOEEb1K0gGyIaFMhQ01HS0hAMVfNVCToH63zJImGVdfiI2iRp2Uifo2t2TdIs
+qJtht+fYQp1qe2GOEy+AovmRkVlUrTKaJVLkQ92malYslECkZFedzgTD87iAswQR
+gsFXclQdmlUnwXAsj6PlvAfmI0uBJVNpUaAFUqQZyIsUxAkSsjLPspIIaDQ3nCIp
+igYyTQGAHDlZYSFqo6kRBEkpmPNtuVYNC+VRTpCOPG1quhXY83SIlXruW0IZDS6e
+Bv/Va403fi0Rd7wYtbespLh38f+5LXF+PoPn0hWLlRM7fR6mtfj9HpHY7tbRPbXK
+Lfzi7aSapvKVXq81kvaxpsat8a3rgiK6B/rC2vHUCuHS1M3k3AQ+94sfe8K1Lvbr
+bjbbsfrl5HtvtymRSoXqSJnzMePTFX5pQ4El4ynGc7cd8093vbVvq2gL8zq4Z2D/
+V7Zlt9bE/fPGFab87uR3HXvxM73qAb4t+Y9A+XpbcljttK2zyKW0/0J8QYxh+F1H
+4ExDbWfFNHPOPcU1Y2XD7Py1+qblNafltsHdZaaybNPZrICk3etHY7wGbvbNJPrK
+D5qfuKuaLpfE+R5Z90PRieYDp/YXBPfIXPQHP0+djd346UDF0YnKHf41r/Z6HZSr
+jVv6B7aujST5wymW53/J+/hheVWCw9Tj/nm9durqtsMvzWe0HBuZbe/2DV9Rynh8
+8pEAbee3SH/GNtxf/2Z5lu7+5PeY/ZDUEWEcLdb/auuMjAqqaxq5ZRjcHtUSPfT+
+8T2dfYVXGjbEBv5Uu/mzOx0fckETPup98+xMfFMdFVN/evSqt09R0FJ78wvvHPr2
+pJs0aD0mvzcxdsH7uarGzKhnTcumd9XNbbvssdE7gQzIj590VEZeh5VpN0Zcnzr6
+mDyqjNBJeLzxy36LaXw2oyB9fHhs7Iz+zXmPZ8ygd83fTMBF/+DJx0Oq8LnGXXHz
+Xe0bHNd2HjmZCe5UW0C05VKq8OD1VqQJXvUv
+=UbPd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/awdeorio
+
+==================================================================
