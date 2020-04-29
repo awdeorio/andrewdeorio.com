@@ -4,6 +4,9 @@
 # Andrew DeOrio <awdeorio@umich.edu>
 
 
+echo "EXPERIMENTAL -- DO NOT DEPLOY"
+exit 1
+
 # Stop on errors and print commands
 set -Eeuxo pipefail
 
