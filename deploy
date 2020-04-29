@@ -40,8 +40,12 @@ rsync \
   --verbose \
   --perms \
   --delete \
-  --checksum \
-  _site/ \
+  --exclude README.md \
+  --exclude LICENSE \
+  --exclude deploy \
+  --exclude .gitignore \
+  --exclude .git \
+  ./ \
   awdeorio@web.eecs.umich.edu:public_html/
 
 # Check for bad links on live site
