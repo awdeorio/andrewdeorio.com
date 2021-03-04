@@ -20,7 +20,7 @@ jekyll build
 html5validator --root _site/
 
 # Check for bad links
-# FIXME check static files for bad links
+linkchecker _site/index.html
 
 # Fix permissions
 find _site/ -type f -exec chmod 644 {} \;
@@ -40,16 +40,3 @@ rsync \
   --checksum \
   _site/ \
   awdeorio@web.eecs.umich.edu:public_html/
-
-# Check for bad links on live site
-OUTPUT_DIR=/tmp/crawl.out
-rm -rf ${OUTPUT_DIR}
-wget \
-  --no-verbose \
-  --spider \
-  --user-agent "Mozilla/4.0" \
-  --recursive \
-  --directory-prefix ${OUTPUT_DIR} \
-  --level 5 \
-  http://andrewdeorio.com/
-rm -rf ${OUTPUT_DIR}
