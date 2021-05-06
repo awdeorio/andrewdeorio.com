@@ -18,75 +18,175 @@
   <meta name="author" content="Andrew DeOrio">
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/awdeorio-favicon.ico">
   <title>Andrew DeOrio</title>
-  <script>
-  $(document)
-    .ready(function() {
-
-      // fix main menu to page on passing
-      $('.main.menu').visibility({
-        type: 'fixed'
-      });
-      $('.overlay').visibility({
-        type: 'fixed',
-        offset: 80
-      });
-
-      // lazy load images
-      $('.image').visibility({
-        type: 'image',
-        transition: 'vertical flip in',
-        duration: 500
-      });
-
-      // show dropdown on hover
-      $('.main.menu  .ui.dropdown').dropdown({
-        on: 'hover'
-      });
-    })
-  ;
-  </script>
 </head>
 <body>
 
-  <div class="ui main text container">
-    <h1 class="ui header">Andrew DeOrio</h1>
-    <p>Andrew DeOrio is a teaching faculty member at the University of Michigan and a consultant for web and machine learning projects.  His research interests are in ensuring the correctness of computer systems, including medical and IOT devices and digital hardware, as well as engineering education.  In addition to teaching software and hardware courses, he teaches Creative Process and works with students on technology-driven creative projects.  His teaching has been recognized with the Provost's Teaching Innovation Prize, and he has twice been named Professor of the Year by the students in his department.  Andrew also plays music, makes fire organs, and is trying to visit every U.S. National Park.</p>
-  </div>
+  <!-- Nav bar on left side -->
+  <div class="ui left vertical inverted sidebar menu labeled icon">
 
-  <div class="ui borderless main menu">
-    <div class="ui text container">
-      <a href="#" class="header item">Andrew DeOrio</a>
-      <a href="#teaching" class="item">Teaching</a>
-      <a href="#research" class="item">Research</a>
-      <a href="#students" class="item">Students</a>
-      <a href="#press" class="item">Press</a>
+    <!-- Logo and Course Title -->
+    <div class="item">
+      <a class="ui logo icon image mini" href="#">
+      </a>
+      <br>
+      <br>
+      <a href="#"><b>Andrew DeOrio</b></a>
     </div>
-  </div>
 
-  <div class="ui text container">
-    <h2 id="teaching">Teaching</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-
-    <h2 id="research">Research</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-
-    <h2 id="students">Students</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-
-    <h2 id="Press">Press</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  </div>
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui center aligned container">
-      <div class="ui horizontal inverted small divided link list">
-        <a class="item" href="#">Site Map</a>
-        <a class="item" href="#">Contact Us</a>
-        <a class="item" href="#">Terms and Conditions</a>
-        <a class="item" href="#">Privacy Policy</a>
+    <!-- Internal links -->
+    <div class="item">
+      <div class="menu">
+        <a class="item" href="#teaching">
+          Teaching
+        </a>
+        <a class="item" href="#research">
+          Research
+        </a>
+        <a class="item" href="#students">
+          Students
+        </a>
       </div>
-    </div>
+    </div><!-- Internal links -->
+
+  </div><!-- Nav bar -->
+
+  <!-- Main page  -->
+  <div class="pusher">
+    <div class="ui text container">
+      <button class="ui right floated icon button" id="left-sidebar-toggle">
+        <i class="bars icon"></i>
+      </button>
+
+      <h1>Andrew DeOrio</h1>
+      <p>
+        <img class="ui left floated small image" alt="headshot" src="/assets/images/headshot.jpg" title="click to download different sizes">
+        Andrew DeOrio is a teaching faculty member at the University of Michigan and a consultant for web and machine learning projects.  His research interests are in ensuring the correctness of computer systems, including medical and IOT devices and digital hardware, as well as engineering education.  In addition to teaching software and hardware courses, he teaches Creative Process and works with students on technology-driven creative projects.  His teaching has been recognized with the Provost's Teaching Innovation Prize, and he has twice been named Professor of the Year by the students in his department.  Andrew also plays music, makes fire organs, and is trying to visit every U.S. National Park.
+      </p>
+      <div class="ui section divider"></div>
+
+      <!-- Teaching section -->
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+      </section>
+      <div class="ui section divider"></div>
+
+      <!-- Research section -->
+      <section id="research">
+        <h2>Research</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+      </section>
+      <div class="ui section divider"></div>
+
+      <!-- Students section -->
+      <section id="students">
+        <h2 id="students">Students</h2>
+        <div class="ui three stackable cards">
+
+          <div class="ui fluid card">
+            <div class="content">
+              <div class="header">
+                Jane Doe
+              </div>
+              <div class="description">
+                <p>First employment</p>
+                <p>LinkedIN</p>
+              </div>
+            </div>
+          </div><!-- /fluid card -->
+
+          <div class="ui fluid card">
+            <div class="content">
+              <div class="header">
+                Jane Doe
+              </div>
+              <div class="description">
+                <p>First employment</p>
+                <p>LinkedIN</p>
+              </div>
+            </div>
+          </div><!-- /fluid card -->
+
+          <div class="ui fluid card">
+            <div class="content">
+              <div class="header">
+                Jane Doe
+              </div>
+              <div class="description">
+                <p>First employment</p>
+                <p>LinkedIN</p>
+              </div>
+            </div>
+          </div><!-- /fluid card -->
+
+          <div class="ui fluid card">
+            <div class="content">
+              <div class="header">
+                Jane Doe
+              </div>
+              <div class="description">
+                <p>First employment</p>
+                <p>LinkedIN</p>
+              </div>
+            </div>
+          </div><!-- /fluid card -->
+
+          <div class="ui fluid card">
+            <div class="content">
+              <div class="header">
+                Jane Doe
+              </div>
+              <div class="description">
+                <p>First employment</p>
+                <p>LinkedIN</p>
+              </div>
+            </div>
+          </div><!-- /fluid card -->
+
+      </div><!-- ui stackable cards -->
+      </section>
+
+      <div class="ui section divider"></div>
+    </div><!-- ui text container -->
   </div>
+
+  <footer>
+    <div class="ui inverted menu">
+    </div>
+  </footer>
+
+  <script>
+   // Sidebar show and hide logic.
+   //
+   // On large screens, show the sidebar by default.  On small screens, hide it.
+   (function() {
+     renderSidebar();
+   })();
+
+   function isSmallScreen() {
+     return screen.width < 900;
+   }
+
+   function renderSidebar() {
+     $sidebar = $('.ui.sidebar');
+     $sidebar.sidebar({
+       dimPage: false,
+       transition: 'overlay',
+       mobileTransition: 'overlay',
+       exclusive: false,
+       closable: false
+     });
+     $sidebar.sidebar('attach events', '#left-sidebar-toggle');
+     if (!isSmallScreen()) {
+       $sidebar.sidebar('toggle');
+     }
+   }
+  </script>
+
 </body>
 
 </html>
