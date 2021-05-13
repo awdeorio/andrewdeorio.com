@@ -3,6 +3,10 @@ Andrew DeOrio's website
 
 Source code for [andrewdeorio.com](http://andrewdeorio.com)
 
+## Documentation
+- [Fomantic UI CSS library](https://fomantic-ui.com/introduction/getting-started.html)
+- [Academic Icons](https://jpswalsh.github.io/academicons/)
+
 ## Debug
 Watch for changes and automatically update on http://localhost:4000
 ```
