@@ -7,15 +7,28 @@
             <div class="description">
               {{ entry.persons['author']|author_list }}. {{ entry|venue_type}} {{ entry|venue -}} {{ entry.fields['month'] }} {{ entry.fields['year'] }}.
             </div>
-            <a class="ui basic icon label" data-tooltip="pdf" href="FIXME" target="_blank">
+            {% if entry.fields.pdf_url | escape -%}
+            <a class="ui basic icon label" data-tooltip="pdf" href="{{entry.fields.pdf_url}}" target="_blank">
               <i class="file pdf icon"></i>
             </a>
-            <a class="ui basic icon label" data-tooltip="Slides" a href="FIXME" target="_blank">
+            {% endif -%}
+            {% if entry.fields.slides_url | escape -%}
+            <a class="ui basic icon label" data-tooltip="Slides" href="{{entry.fields.slides_url}}" target="_blank">
               <i class="file powerpoint outline icon"></i>
             </a>
-            <a class="ui basic icon label" data-tooltip="BibTeX citation" href="FIXME" target="_blank">
-              <i class="quote left icon"></i>
+            {% endif -%}
+            {% if entry.fields.youtube_url | escape -%}
+            <a class="ui basic icon label" data-tooltip="YouTube" href="{{entry.fields.youtube_url}}" target="_blank">
+              <i class="youtube icon"></i>
             </a>
+            {% endif -%}
+            {% if entry.fields.award -%}
+            <div class="ui primary label">
+              <i class="award icon"></i>
+              {{entry.fields.award}}
+            </div>
+            {% endif -%}
+            <!-- <div>DEBUG {{entry}}</div> -->
           </div><!-- /item -->
 
           {% endfor -%}
