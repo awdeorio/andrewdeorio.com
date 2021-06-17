@@ -11,17 +11,15 @@ if ! grep -q "END BIBBLE" docs/index.html; then
   exit 1
 fi
 
-# Back up
-cp docs/index.html docs/index.html.bak
-
 # Copy everything up to and including "BEGIN BIBBLE"
-sed '/BEGIN BIBBLE/q' docs/index.html.bak > docs/index.html
+sed '/BEGIN BIBBLE/q' docs/index.html > docs/index.html.tmp
 
 # Generate new publications list and insert
-bibble awdeorio.bib bibble_template.html >> docs/index.html
+bibble awdeorio.bib bibble_template.html >> docs/index.html.tmp
 
 # Copy everything after and including "END BIBBLE"
-sed -ne '/END BIBBLE/,$ p' docs/index.html.bak  >> docs/index.html
+sed -ne '/END BIBBLE/,$ p' docs/index.html  >> docs/index.html.tmp
 
 # Clean up
-rm -f docs/index.html.bak
+cp docs/index.html.tmp docs/index.html
+rm -f docs/index.html.tmp
