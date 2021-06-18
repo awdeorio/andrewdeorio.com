@@ -7,57 +7,50 @@
             <div class="description">
               {{ entry.persons['author']|author_list }}. {{ entry|venue_type}} {{ entry|venue }}, {{ entry.fields['month'] }} {{ entry.fields['year'] }}.
             </div>
-            {% if entry.fields.pdf_url | escape -%}
-            <a class="ui basic icon label" data-tooltip="Paper" href="{{entry.fields.pdf_url}}" target="_blank">
+            {% for type, url in (entry|extra_urls).items() -%}
+            {% if type == 'pdf' -%}
+            <a class="ui basic icon label" data-tooltip="Paper" href="{{url | escape}}" target="_blank">
               <i class="file outline pdf icon"></i>
             </a>
-            {% endif -%}
-            {% if entry.fields.arxiv_url | escape -%}
-            <a class="ui basic icon label" data-tooltip="arXiv" href="{{entry.fields.arxiv_url}}" target="_blank">
+            {% elif type == 'arxiv' -%}
+            <a class="ui basic icon label" data-tooltip="arXiv" href="{{url | escape}}" target="_blank">
               <i class="ai ai-arxiv"></i>
             </a>
-            {% endif -%}
-            {% if entry.fields.ieeexplore_url | escape -%}
-            <a class="ui basic icon label" data-tooltip="IEEE Xplore" href="{{entry.fields.ieeexplore_url}}" target="_blank">
+            {% elif type == 'ieeexplore' -%}
+            <a class="ui basic icon label" data-tooltip="IEEE Xplore" href="{{url | escape}}" target="_blank">
               <i class="ai ai-ieee"></i>
             </a>
-            {% endif -%}
-            {% if entry.fields.book_url | escape -%}
-            <a class="ui basic icon label" data-tooltip="Buy book" href="{{entry.fields.book_url}}" target="_blank">
+            {% elif type == 'book' -%}
+            <a class="ui basic icon label" data-tooltip="Buy book" href="{{url | escape}}" target="_blank">
               <i class="book icon"></i>
             </a>
-            {% endif -%}
-            {% if entry.fields.abstract_url | escape -%}
-            <a class="ui basic icon label" data-tooltip="Abstract" href="{{entry.fields.abstract_url}}" target="_blank">
+            {% elif type == 'abstract' -%}
+            <a class="ui basic icon label" data-tooltip="Abstract" href="{{url | escape}}" target="_blank">
               <i class="file outline icon"></i>
             </a>
-            {% endif -%}
-            {% if entry.fields.poster_url | escape -%}
-            <a class="ui basic icon label" data-tooltip="Poster" href="{{entry.fields.poster_url}}" target="_blank">
+            {% elif type == 'poster' -%}
+            <a class="ui basic icon label" data-tooltip="Poster" href="{{url | escape}}" target="_blank">
               <i class="chart line icon"></i>
             </a>
-            {% endif -%}
-            {% if entry.fields.slides_url | escape -%}
-            <a class="ui basic icon label" data-tooltip="Slides" href="{{entry.fields.slides_url}}" target="_blank">
+            {% elif type == 'slides' -%}
+            <a class="ui basic icon label" data-tooltip="Slides" href="{{url | escape}}" target="_blank">
               <i class="file powerpoint outline icon"></i>
             </a>
-            {% endif -%}
-            {% if entry.fields.youtube_url | escape -%}
-            <a class="ui basic icon label" data-tooltip="YouTube" href="{{entry.fields.youtube_url}}" target="_blank">
+            {% elif type == 'youtube' -%}
+            <a class="ui basic icon label" data-tooltip="YouTube" href="{{url | escape}}" target="_blank">
               <i class="youtube icon"></i>
             </a>
+            {% else -%}
+            <a class="ui primary icon label" href="{{url | escape}}" target="_blank">
+              {{type | upper}}
+            </a>
             {% endif -%}
+            {% endfor -%}
             {% if entry.fields.award -%}
             <div class="ui primary label">
               <i class="award icon"></i>
               {{entry.fields.award}}
             </div>
-            {% endif -%}
-            {% if entry.fields.press_url -%}
-            <a class="ui primary label" data-tooltip="Press" href="{{entry.fields.press_url}}" target="_blank">
-              <i class="newspaper icon"></i>
-              Press
-            </a>
             {% endif -%}
           </div><!-- /item -->
 
