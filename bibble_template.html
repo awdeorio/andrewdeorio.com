@@ -1,60 +1,60 @@
-        <div class="ui list">
-          {% for entry in entries -%}
-          <div class="item">
-            <div class="header" id="{{entry.key}}">
-              {{ entry|title }}
-              <a href="#{{entry.key}}"><i class="linkify icon"></i></a>
-            </div>
-            <div class="description">
-              {{ entry.persons['author']|author_list }}. {{ entry|venue_type}} {{ entry|venue }}, {{ entry.fields['month'] }} {{ entry.fields['year'] }}.
-            </div>
-            {% for type, url in (entry|extra_urls).items() -%}
-            {% if type == 'pdf' -%}
-            <a class="ui basic icon label" data-tooltip="Paper" href="{{url | escape}}" target="_blank">
-              <i class="file outline pdf icon"></i>
-            </a>
-            {% elif type == 'arxiv' -%}
-            <a class="ui basic icon label" data-tooltip="arXiv" href="{{url | escape}}" target="_blank">
-              <i class="ai ai-arxiv"></i>
-            </a>
-            {% elif type == 'ieeexplore' -%}
-            <a class="ui basic icon label" data-tooltip="IEEE Xplore" href="{{url | escape}}" target="_blank">
-              <i class="ai ai-ieee"></i>
-            </a>
-            {% elif type == 'book' -%}
-            <a class="ui basic icon label" data-tooltip="Buy book" href="{{url | escape}}" target="_blank">
-              <i class="book icon"></i>
-            </a>
-            {% elif type == 'abstract' -%}
-            <a class="ui basic icon label" data-tooltip="Abstract" href="{{url | escape}}" target="_blank">
-              <i class="file outline icon"></i>
-            </a>
-            {% elif type == 'poster' -%}
-            <a class="ui basic icon label" data-tooltip="Poster" href="{{url | escape}}" target="_blank">
-              <i class="chart line icon"></i>
-            </a>
-            {% elif type == 'slides' -%}
-            <a class="ui basic icon label" data-tooltip="Slides" href="{{url | escape}}" target="_blank">
-              <i class="file powerpoint outline icon"></i>
-            </a>
-            {% elif type == 'youtube' -%}
-            <a class="ui basic icon label" data-tooltip="YouTube" href="{{url | escape}}" target="_blank">
-              <i class="youtube icon"></i>
-            </a>
-            {% else -%}
-            <a class="ui primary icon label" href="{{url | escape}}" target="_blank">
-              <i class="newspaper icon"></i>
-              {{type | upper}}
-            </a>
-            {% endif -%}
-            {% endfor -%}
-            {% if entry.fields.award -%}
-            <div class="ui primary label">
-              <i class="award icon"></i>
-              {{entry.fields.award}}
-            </div>
-            {% endif -%}
-          </div><!-- /item -->
-
+      <div class="ui list">
+        {% for entry in entries -%}
+        <div class="item">
+          <div class="header" id="{{entry.key}}">
+            {{ entry|title }}
+            <a href="#{{entry.key}}"><i class="linkify icon"></i></a>
+          </div>
+          <div class="description">
+            {{ entry.persons['author']|author_list }}. {{ entry|venue_type}} {{ entry|venue }}, {{ entry.fields['month'] }} {{ entry.fields['year'] }}.
+          </div>
+          {% for type, url in (entry|extra_urls).items() -%}
+          {% if type == 'pdf' -%}
+          <a class="ui basic icon label" data-tooltip="Paper" href="{{url | escape}}" target="_blank">
+            <i class="file outline pdf icon"></i>
+          </a>
+          {% elif type == 'arxiv' -%}
+          <a class="ui basic icon label" data-tooltip="arXiv" href="{{url | escape}}" target="_blank">
+            <i class="ai ai-arxiv"></i>
+          </a>
+          {% elif type == 'ieeexplore' -%}
+          <a class="ui basic icon label" data-tooltip="IEEE Xplore" href="{{url | escape}}" target="_blank">
+            <i class="ai ai-ieee"></i>
+          </a>
+          {% elif type == 'book' -%}
+          <a class="ui basic icon label" data-tooltip="Buy book" href="{{url | escape}}" target="_blank">
+            <i class="book icon"></i>
+          </a>
+          {% elif type == 'abstract' -%}
+          <a class="ui basic icon label" data-tooltip="Abstract" href="{{url | escape}}" target="_blank">
+            <i class="file outline icon"></i>
+          </a>
+          {% elif type == 'poster' -%}
+          <a class="ui basic icon label" data-tooltip="Poster" href="{{url | escape}}" target="_blank">
+            <i class="chart line icon"></i>
+          </a>
+          {% elif type == 'slides' -%}
+          <a class="ui basic icon label" data-tooltip="Slides" href="{{url | escape}}" target="_blank">
+            <i class="file powerpoint outline icon"></i>
+          </a>
+          {% elif type == 'youtube' -%}
+          <a class="ui basic icon label" data-tooltip="YouTube" href="{{url | escape}}" target="_blank">
+            <i class="youtube icon"></i>
+          </a>
+          {% else -%}
+          <a class="ui primary icon label" href="{{url | escape}}" target="_blank">
+            <i class="newspaper icon"></i>
+            {{type | upper}}
+          </a>
+          {% endif -%}
           {% endfor -%}
-        </div><!-- ui list -->
+          {% if entry.fields.award -%}
+          <div class="ui primary label">
+            <i class="award icon"></i>
+            {{entry.fields.award}}
+          </div>
+          {% endif -%}
+        </div><!-- /item -->
+
+        {% endfor -%}
+      </div><!-- ui list -->
