@@ -25,38 +25,8 @@
 </head>
 <body>
 
-  <!-- Nav bar on left side -->
-  <div class="ui left vertical sidebar menu labeled icon">
-
-    <!-- Logo and Course Title -->
-    <div class="item">
-      <a class="ui logo icon image mini" href="#">
-      </a>
-      <br>
-      <br>
-      <a href="#"><b>Andrew DeOrio</b></a>
-    </div>
-
-    <!-- Internal links -->
-    <div class="item">
-      <div class="menu">
-        <a class="item" href="#teaching">
-          Teaching
-        </a>
-        <a class="item" href="#research">
-          Research
-        </a>
-        <a class="item" href="#students">
-          Students
-        </a>
-      </div>
-    </div><!-- Internal links -->
-
-  </div><!-- Nav bar -->
-
   <!-- Main page  -->
-  <div class="pusher">
-    <div class="ui text container">
+  <div class="ui text container">
       <button class="ui right floated icon button" id="left-sidebar-toggle">
         <i class="bars icon"></i>
       </button>
@@ -98,14 +68,23 @@
         <i class="ui icon envelope"></i>
       </a>
 
-
       <h1>Andrew DeOrio</h1>
       <p>
         <img class="ui left floated rounded small image" alt="headshot" src="/assets/images/headshot.jpg">
         Andrew DeOrio is a teaching faculty member at the University of Michigan and a consultant for web and machine learning projects.  His research interests are in engineering education and computing for health care.  His teaching has been recognized with the Provost's Teaching Innovation Prize, and he has twice been named Professor of the Year by the students in his department.  Andrew is trying to visit every U.S. National Park.
       </p>
-      <p>
-      <div class="ui section divider"></div>
+      <div class="ui hidden section divider"></div>
+
+
+      <!-- Internal links -->
+      <div class="ui menu">
+        <a href="#teaching" class="item">Teaching</a>
+        <a href="#research" class="item">Research</a>
+        <a href="#students" class="item">Students</a>
+        <a href="#contact" class="ui right item">Contact</a>
+      </div>
+      <div class="ui hidden section divider"></div>
+
 
       <!-- Teaching section -->
       <section id="teaching">
@@ -217,11 +196,11 @@
         </a>
 
         <h2>Research</h2>
-        <div>
-          <a href="#papers">Papers</a> |
-          <a href="#patents">Patents</a> |
-          <a href="#talks">Talks</a> |
-          <a href="#dissertation">Dissertation</a>
+        <div class="ui text menu">
+          <a href="#papers" class="item">Papers</a>
+          <a href="#patents" class="item">Patents</a>
+          <a href="#talks" class="item">Talks</a>
+          <a href="#dissertation" class="item">Dissertation</a>
         </div>
         <h3 id="papers">Papers</h3>
 
@@ -1410,11 +1389,10 @@
       </section>
 
       <div class="ui section divider"></div>
-    </div><!-- ui text container -->
   </div>
 
   <footer class="ui inverted vertical footer segment">
-    <div class="ui center aligned container">
+    <section class="ui center aligned container" id="contact">
       <div class="ui stackable inverted divided grid">
         <div class="two wide column"></div>
         <div class="four wide column left aligned">
@@ -1487,38 +1465,8 @@
       <div class="ui horizontal inverted small divided link list">
         <div class="item">&copy; 2021 Andrew DeOrio</div>
       </div>
-    </div>
+    </section>
   </footer>
-
-
-
-  <script>
-   // Sidebar show and hide logic.
-   //
-   // On large screens, show the sidebar by default.  On small screens, hide it.
-   (function() {
-     renderSidebar();
-   })();
-
-   function isSmallScreen() {
-     return screen.width < 900;
-   }
-
-   function renderSidebar() {
-     $sidebar = $('.ui.sidebar');
-     $sidebar.sidebar({
-       dimPage: false,
-       transition: 'overlay',
-       mobileTransition: 'overlay',
-       exclusive: false,
-       closable: false
-     });
-     $sidebar.sidebar('attach events', '#left-sidebar-toggle');
-     if (!isSmallScreen()) {
-       $sidebar.sidebar('toggle');
-     }
-   }
-  </script>
 
 </body>
 
