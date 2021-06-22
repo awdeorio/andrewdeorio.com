@@ -4,7 +4,16 @@
 set -Eeuo pipefail
 
 # Make sure publications list is up-to-date
-
+cp html/index.html tmp.html
+./build tmp.html
+if ! diff -q html/index.html tmp.html > /dev/null; then
+  echo "Error: publications list is out-of-date"
+  rm -f tmp.html
+  exit 1
+else
+  echo "Publications list is up-to-date"
+  rm -f tmp.html
+fi
 
 # Make sure copyright year is up-to-date
 COPYYEAR=$(grep -E '&copy; \d+ Andrew DeOrio' html/index.html | grep -Eo '\d+')
