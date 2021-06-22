@@ -2,6 +2,7 @@
 
 # Stop on errors
 set -Eeuo pipefail
+set -x  # DEBUG
 
 # Make sure publications list is up-to-date
 cp html/index.html tmp.html
