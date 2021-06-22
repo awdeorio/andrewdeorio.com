@@ -2,7 +2,6 @@
 
 # Stop on errors
 set -Eeuo pipefail
-set -x  # DEBUG
 
 # Make sure publications list is up-to-date
 cp html/index.html tmp.html
@@ -16,18 +15,12 @@ else
   rm -f tmp.html
 fi
 
-# Make sure copyright year is up-to-date
-COPYYEAR=$(grep -E '&copy; \d+ Andrew DeOrio' html/index.html | grep -Eo '\d+')
-CURYEAR=$(date '+%Y')
-if [ "$COPYYEAR" != "$CURYEAR" ]; then
-  echo "Error: Copyright year ${COPYYEAR} in html/index.html is out-of-date"
-  exit 1
-else
-  echo "Copyright year ${COPYYEAR} in html/index.html is up-to-date"
-fi
-
 # Print commands
 set -x
+
+# Make sure copyright year is up-to-dat
+YEAR=$(date '+%Y')
+grep -q "&copy; ${YEAR} Andrew DeOrio" html/index.html
 
 # Validate HTML
 html5validator --root html
