@@ -44,7 +44,7 @@
           {% else -%}
           <a class="ui primary label" href="{{url | escape}}" target="_blank">
             <i class="newspaper icon"></i>
-            {{type | upper}}
+            {{type.title()}}
           </a>
           {% endif -%}
           {% endfor -%}
