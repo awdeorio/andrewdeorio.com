@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# Stop on errors
+set -Eeuo pipefail
+
+# Check if we're in the right directory
+PROJECT_HOME=$(cd $(dirname $0) && pwd -P)
+if [ $(pwd) != "$PROJECT_HOME" ]; then
+  echo "Error: not in project root directory ${PROJECT_HOME}"
+  exit 1
+fi
+
+# Make sure publications list is up-to-date
+cp html/index.html tmp.html
+./build tmp.html
+if ! diff -q html/index.html tmp.html > /dev/null; then
+  echo "Error: publications list is out-of-date"
+  rm -f tmp.html
+  exit 1
+else
+  echo "Publications list is up-to-date"
+  rm -f tmp.html
+fi
+
+# Verify images are optimized for the web
+IMAGES=$(ls html/assets/images/*)
+
+# File sizes should not be too big
+for IMAGE in $IMAGES; do
+  SIZE=$(du "$IMAGE" | awk '{print $1}')
+  if [ "$SIZE" -ge 150 ]; then
+    echo "Error: size exceeds 100 kB ${IMAGE} ${SIZE}"
+    exit 1
+  fi
+done
+
+# Images should not contain EXIF data.  It can reveal personal details like GPS
+# location and cell phone serial number.
+for IMAGE in $IMAGES; do
+  EXIF=$(identify -format '%[EXIF:*]' "$IMAGE")
+  if [ -n "$EXIF" ]; then
+    echo "Error: EXIF data not allowed (try ImageOptim) ${IMAGE}"
+    exit 1
+  fi
+done
+
+# Print commands
+set -x
+
+# Make sure copyright year is up-to-dat
+YEAR=$(date '+%Y')
+grep -q "&copy; ${YEAR} Andrew DeOrio" html/index.html
+
+# Validate HTML
+html5validator --root html
+
+# Check for bad links
+linkchecker \
+  --check-extern \
+  --timeout 10 \
+  --threads 100 \
+  --ignore-url=https://umich.instructure.com/ \
+  html

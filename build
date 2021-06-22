@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+# Update publications list using Bibble.
+
+# Stop on errors
+set -Eeuo pipefail
+
+# Parse arguments
+if [ "$#" -eq 0 ]; then
+  INDEXHTML="html/index.html"
+elif [ "$#" -eq 1 ]; then
+  INDEXHTML="$1"
+else
+  echo "Usage: $0 [INDEXHTML]"
+  exit 1
+fi
+
+# Sanity checks
+if ! test -e $INDEXHTML; then
+  echo "Error: file does not exist: $INDEXHTML"
+  exit 1
+fi
+if ! grep -q "BEGIN BIBBLE" $INDEXHTML; then
+  echo "Error: can't find 'BEGIN BIBBLE' in $INDEXHTML"
+  exit 1
+fi
+if ! grep -q "END BIBBLE" $INDEXHTML; then
+  echo "Error: can't find 'END BIBBLE' in $INDEXHTML"
+  exit 1
+fi
+
+# Copy everything up to and including "BEGIN BIBBLE"
+sed '/BEGIN BIBBLE/q' $INDEXHTML > $INDEXHTML.tmp
+
+# Generate new publications list and insert
+bibble publications_database.bib publications_template.html >> $INDEXHTML.tmp
+
+# Copy everything after and including "END BIBBLE"
+sed -ne '/END BIBBLE/,$ p' $INDEXHTML  >> $INDEXHTML.tmp
+
+# Clean up
+mv $INDEXHTML.tmp $INDEXHTML

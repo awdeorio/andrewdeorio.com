@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EECS 280">
+  <meta name="keywords" content="EECS280, EECS 280, Programming and Introductory Data Structures, Syllabus">
+  <title>EECS 280 Syllabus</title>
+
+  <!-- Fomantic UI CSS library https://fomantic-ui.com/introduction/getting-started.html#using-a-cdn-provider --> 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+</head>
+
+<body>
+  <!-- Main page  -->
+  <div class="pusher">
+    <div class="ui text container">
+
+      <h1>EECS 280: Programming and Introductory Data Structures Syllabus</h1>
+      <p><i>The University of Michigan, Winter 2021</i></p>
+      <p>Computer science fundamentals, with programming in C++.  Build an image processing program, a Euchre card game, a web backend, and a machine learning algorithm.</p>
+
+      <h2 id="instructors">Instructors <a href="#instructors"><i class="small linkify icon"></i></a></h2>
+      <table>
+        <tr><td>Jonathan Beaumont &lt;<a href="mailto:jbbeau@umich.edu">jbbeau@umich.edu</a>&gt;</td></tr>
+        <tr><td>Andrew DeOrio &lt;<a href="mailto:awdeorio@umich.edu">awdeorio@umich.edu</a>&gt;</td></tr>
+        <tr><td>James Juett &lt;<a href="mailto:jjuett@umich.edu">jjuett@umich.edu</a>&gt;</td></tr>
+      </table>
+
+      <h2 id="remote-instruction">Remote Instruction <a href="#remote-instruction"><i class="small linkify icon"></i></a></h2>
+      <p>Due to COVID-19, EECS 280 will be remote this semester.  You can complete the entire course from anywhere in the world.</p>
+      <p><b>Lectures</b> are offered via live and asynchronous formats.  You may attend any lecture section or watch any of the recordings, even if it's different than your registered section. We don't take attendance in lecture.</p>
+      <table class="ui celled table">
+        <tbody class="top aligned">
+          <tr>
+            <td>MW 10:30 - 12:00 ET</td>
+            <td>DeOrio Zoom Lecture</td>
+          </tr>
+          <tr>
+            <td>MW 1:30 - 3:00 ET</td>
+            <td>Juett Zoom Lecture</td>
+          </tr>
+          <tr>
+            <td>MW 3:00 - 4:30 ET</td>
+            <td>Beaumont Zoom Lecture</td>
+          </tr>
+          <tr>
+            <td>Asynchronous</td>
+            <td>DeOrio short videos via <a href="https://umich.instructure.com/courses/406738/external_tools/30615" target="_blank">Panopto</a></td>
+          </tr>
+          <tr>
+            <td>Asynchronous</td>
+            <td>Juett short videos and interactive exercises via <a href="https://runestone.academy/" target="_blank">Runestone</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><b>Labs</b> will be completed remotely in assigned groups of four.  A staff member will join your video call for part of the time.  Expect to complete a worksheet together as a group.  <mark>Attendance at your registered lab is required.</mark></p>
+
+      <p><b>Projects</b> will be completed either alone or in a partnership and turned in to an autograder.</p>
+
+      <p><b>Exams</b> will be completed remotely using a web-based exam platform.  Expect scheduled, timed midterm and final exams.</p>
+
+      <p><b>Office hours</b> will be held via video conference, both one-on-one and in groups.</p>
+
+      <p><b>Grades</b> are weighted less on exams compared to previous semesters (<a href="#grades">rubric</a>).</p>
+
+      <h3 id="computer-and-network-recommendations">Computer and network recommendations <a href="#computer-and-network-recommendations"><i class="small linkify icon"></i></a></h3>
+      <p>Make sure you have a laptop consistent with <a href="https://caen.engin.umich.edu/percomps/" target="_blank">CAEN recommendations</a>.</p>
+      <p>Test your internet connection with the <a href="http://umich.speedtestcustom.com" target="_blank">U-M Custom Speedtest website</a> and make sure it meets the <a href="https://caenfaq.engin.umich.edu/connect/network-bandwidth-to-use-campus-resources-from-home" target="_blank">minimum requirements for any UM service</a>.  You'll need more bandwidth if there will be multiple simultaneous users in your household.</p>
+      <p>Resources for help with computing equipment:</p>
+      <ul>
+        <li>Information and Technology Services (ITS) <a href="https://its.umich.edu/computing/computers-software/sites-at-home" target="_blank">Laptop loaner program</a></li>
+        <li>College of Engineering (CoE) <a href="https://studentaffairs.engin.umich.edu/" target="_blank">Office of Student Affairs</a>, email requests to <a href="mailto:coe-studentaffairs@umich.edu">coe-studentaffairs@umich.edu</a></li>
+      </ul>
+
+      <h2 id="overview">Overview <a href="#overview"><i class="small linkify icon"></i></a></h2>
+      <p>EECS 280 is a second-semester foundational programming course.  You'll learn how to write correct programs that are easy for others to understand and modify. We focus on computer science concepts including:</p>
+
+      <table class="ui celled table">
+        <tbody class="top aligned">
+          <tr>
+            <td>
+              <ul>
+                <li>Value and reference semantics</li>
+                <li>Functional abstraction</li>
+                <li>Data abstraction</li>
+                <li>Inheritance and Polymorphism</li>
+                <li>Dynamic resource management</li>
+                <li>Compound Types</li>
+                <li>Encapsulation</li>
+              </ul>
+              <td>
+                <ul>
+                  <li>Container Data Structures</li>
+                  <li>Recursion</li>
+                  <li>Generic Programming</li>
+                  <li>Higher-Order Functions</li>
+                  <li>Testing and debugging</li>
+                  <li>Stacks and queues</li>
+                  <li>Linked lists and binary trees</li>
+                </ul>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>In our exploration of these concepts, we cover many elements of the C++ language:</p>
+      <table class="ui celled table">
+        <tbody class="top aligned">
+          <tr>
+            <td>
+              <ul>
+                <li>Arrays and Vectors</li>
+                <li>File and stream I/O</li>
+                <li>C and C++ strings</li>
+                <li>Pointers</li>
+                <li>Structs and classes</li>
+                <li>Operator overloading</li>
+              </ul>
+              <td>
+                <ul>
+                  <li>Derived types</li>
+                  <li>The Big Three</li>
+                  <li>Templates</li>
+                  <li>Iterators</li>
+                  <li>Functors</li>
+                  <li>Exceptions</li>
+                </ul>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="prerequisites">Prerequisites <a href="#prerequisites"><i class="small linkify icon"></i></a></h2>
+      <p>ENGR 101 or ENGR 151 or EECS 180 or EECS 183 with a minimum grade of "C". Prerequisites may be waived with transfer credit or a proficiency exam.  Contact the CSE Advising Office in Beyster 2808 <a href="mailto:ugadmin@eecs.umich.edu">ugadmin@eecs.umich.edu</a>.</p>
+
+      <h2 id="textbook">Textbook <a href="#textbook"><i class="small linkify icon"></i></a></h2>
+      <p>Course <a href="https://eecs280staff.github.io/notes/" target="_blank">notes</a>.</p>
+      <p>Optional <u>C++ Primer</u> by Lippman, Lajoie and Moo. 5th edition. Available <a href="http://proxy.lib.umich.edu/login?url=http://proquest.safaribooksonline.com/9780133053043" target="_blank">free</a> through UM library.</p>
+
+      <h2 id="communication">Communication <a href="#communication"><i class="small linkify icon"></i></a></h2>
+      <p><a href="." target="_blank">eecs280.org</a> links to all course resources and is required reading.</p>
+      <p><a href="https://piazza.com/" target="_blank">Piazza</a> is the course discussion forum, best for technical questions and project updates.  Do not publicly post your code.</p>
+      <p><a href="mailto:eecs280staff@umich.edu">eecs280staff@umich.edu</a> reaches the course staff, best for non-technical questions.</p>
+      <p><a href="#instructors">Individual professor</a> email addresses are best for confidential matters.</p>
+      <p><a href="https://umich.instructure.com/" target="_blank">Canvas</a> is where we publish important announcements and grades. It is your responsibility to verify you can receive Canvas announcements.</p>
+
+      <h2 id="exams">Exams <a href="#exams"><i class="small linkify icon"></i></a></h2>
+      <p>There will be one midterm and one final examination. Exam dates are posted on <a href="../#schedule" target="_blank">eecs280.org</a>. It is your responsibility to verify you can attend both exams before registering.</p>
+
+      <h3 id="alternate-exams">Alternate Exams <a href="#alternate-exams"><i class="small linkify icon"></i></a></h3>
+      <p>We provide a single alternate midterm exam.  It is available only to students who have a valid, documented conflict with a required activity in another course, or university-affiliated athletics.</p>
+      <p>We provide a single alternate final exam.  It is available only to students who have a conflict with another final exam.</p>
+      <p>All requests for alternate exams must be received no later than the third week of the semester.</p>
+
+      <h2 id="labs">Labs <a href="#labs"><i class="small linkify icon"></i></a></h2>
+      <p>During lab sections, you will complete worksheets in small groups.  A staff member will join you for part of the lab.  Labs will be graded on attendance and completion of the worksheet.</p>
+
+      <h2 id="projects">Projects <a href="#projects"><i class="small linkify icon"></i></a></h2>
+      <p>You will complete five major programming projects ranging in size from ~100 to ~1,000 lines of code.</p>
+
+      <h3 id="project-partnerships">Project Partnerships <a href="#project-partnerships"><i class="small linkify icon"></i></a></h3>
+      <p>Project 1 is independent.  You may work either alone or in a partnership for the remaining projects.</p>
+
+      <p>If you work in a partnership, you must partner with a student registered for EECS 280 this term (any section).  You must not partner with anyone outside the course.  <mark>For those retaking the course: if you submitted an assignment in a previous term, you must not partner on that same assignment this term.</mark>
+      <p>You may change partners between projects.  You must not change partners during a project.  In exceptional cases, you may request partnership dissolution via email to the faculty. If the dissolution is granted, both partners may use previously shared code and both partners must work alone on the remainder of the project.</p>
+      <p>You and your partner turn in the same solution to the autograder.  You must register your partnership on the autograder.</p>
+
+      <h3 id="project-grading">Project Grading <a href="#project-grading"><i class="small linkify icon"></i></a></h3>
+      <p>We use a web-based autograder to evaluate correctness, style, and the thoroughness of your tests.</p>
+      <p>Before the deadline, you may submit up to 3 times per day. After each submission, the autograder shows the results of the public tests released with the project.</p>
+      <p>After the deadline, the autograder shows the results of private tests, which are usually more thorough than the public tests.</p>
+      <p>Your final project score is a combination of public and private tests.  We use the submission that received the combined best score. If multiple submissions share the best score, we grade the last.</p>
+
+      <h3 id="programming-environment">Programming Environment <a href="#programming-environment"><i class="small linkify icon"></i></a></h3>
+      <p>You are free to develop on any platform.  You are responsible for any differences between your preferred platform and the grading platform, so use only ANSI/ISO standard C++. We recommend testing your code on <a href="http://caen.engin.umich.edu/accounts/obtain" target="_blank">CAEN Linux</a>, which provides version 4.8.5 of the g++ compiler, the same version used by the autograder.</p>
+
+      <h3 id="project-tips">Project Tips <a href="#project-tips"><i class="small linkify icon"></i></a></h3>
+      <p>Tips for doing well on the projects include:</p>
+      <ul>
+        <li><b>Start early.</b>  This is the most common problem.</li>
+        <li><b>Try a debugger.</b>  One major goal of this course is for you to learn to test and debug your programs independently.</li>
+        <li><b>Ask for help.</b>  We want to help you in office hours!</li>
+        <li><b>Back up.</b>  We can't help you with lost data.</li>
+      </ul>
+      <p>Tips for project partnerships include:</p>
+      <ul>
+        <li><b>Form your partnership early.</b> Don't partner with someone who has already written most of the code, or vice versa. You won't get as much out of the project.</li>
+        <li><b>Plan your strategy.</b> When will you meet? Do you plan to attend office hours? Do you prefer to work during the day, at night, or on the weekends? Will you start early?</li>
+        <li><b>Work on all parts of the project together.</b> We strongly encourage <a href="https://en.wikipedia.org/wiki/Pair_programming" target="_blank">pair programming</a>. It's also valuable practice for exams.</li>
+        <li><b>Do NOT split the work in half</b> and work separately. You'll have no control over your partner's contribution. Splitting the work also harms your readiness for exams.</li>
+      </ul>
+
+      <h2 id="grades">Grades <a href="#grades"><i class="small linkify icon"></i></a></h2>
+      <p>Letter grades are assigned on a straight scale with curved exams.  In general, our goal is be consistent with <a href="https://atlas.ai.umich.edu/course/EECS%20280/" target="_blank">past semesters</a>.</p>
+      <p>Compared to previous semesters (before Winter 2021), exams are weighted less.  Additionally, letter grades are assigned on a straight scale and exams are curved individually.  The new process is intended to increase transparency, and we expect the overall grade distribution to remain consistent with past semesters.</p>
+      
+      <p>We calculate your total weighted score using these weights.</p>
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>Assignment</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lab (all labs equal weight)</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>Projects (p1 5%; p2-p5 11% each)</td>
+            <td>49%</td>
+          </tr>
+          <tr>
+            <td>Midterm Exam</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>Final Exam</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>Computing CARES entry and exit surveys</td>
+            <td>1%</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>100%</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p>After computing the total weighted score, we use these ranges to assign letter grades.  Each range is half-inclusive, for example a score of 89.9% is a B+ and a score of 90.0% is an A-.  We may adjust thresholds in your favor.
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>Total weighted score</th>
+            <th>Letter grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0 - 50%</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>50 - 60%</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>60 - 70%</td>
+            <td>C-</td>
+          </tr>
+          <tr>
+            <td>70 - 77%</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>77 - 80%</td>
+            <td>C+</td>
+          </tr>
+          <tr>
+            <td>80 - 83%</td>
+            <td>B-</td>
+          </tr>
+          <tr>
+            <td>83 - 87%</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>87 - 90%</td>
+            <td>B+</td>
+          </tr>
+
+          <tr>
+            <td>90 - 93%</td>
+            <td>A-</td>
+          </tr>
+          <tr>
+            <td>93 - 97%</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>97 - 100%</td>
+            <td>A+</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="curve">Curve <a href="#curve"><i class="small linkify icon"></i></a></h3>
+      <p>After each exam, we may adjust your score to account for the difficulty of the exam.  In general, our goal is a mean in the mid 80's.  We will never adjust scores downward.</p>
+
+      <h3 id="minimum-scores">Minimum scores <a href="#minimum-scores"><i class="small linkify icon"></i></a></h3>
+      <p>To pass EECS 280 with a C or better, your total weighted project score must be at least 60.0%, and your total weighted curved exam score must be at least 70.0%.</p>
+
+      <h3 id="deadlines">Deadlines and Extension Policy<a href="#deadlines"><i class="small linkify icon"></i></a></h3>
+      <p>We do not accept late work. Project and lab submissions are not allowed past the deadline.</p>
+      <p>Students adding EECS 280 after the Project 1, Lab 1, or Lab 2 deadline may petition to turn in those assignments.</p>
+      <p>We will consider extension requests made at least two weeks in advance, for example, for religious holidays or planned medical procedures.</p>
+      <p>If you experience a medical or personal emergency, please reach out to us! We will consider exceptions on a case-by-case basis. Please provide documentation of the emergency if you are able, as this helps us make appropriate accommodations.</p>
+      <p>We do not consider individual exception or extension requests for labs. Instead, we will automatically drop your two lowest lab scores.</p>
+      <p>Request an extension using the form linked from <a href=".." target="_blank">eecs280.org</a>.</p>
+
+      <h3 id="regrades">Regrades <a href="#regrades"><i class="small linkify icon"></i></a></h3>
+      <p>Exams are graded by hand.  Request a regrade via Gradescope.  We accept requests only to correct grading errors, not disagreement with the rubric.  Your score may go up or down.</p>
+      <p>Labs are graded for attendance and completion. Report a clerical error via the link on <a href=".." target="_blank">eecs280.org</a>.</p>
+      <p>Projects are automatically graded. We do not accept regrade requests.</p>
+      <p>In all cases regrade requests are due no later than 7 days after a grade is released unless a shorter deadline is specified.</p>
+
+      <h2 id="academic-integrity">Academic Integrity <a href="#academic-integrity"><i class="small linkify icon"></i></a></h2>
+      <p>We encourage collaboration in EECS 280, especially on concepts, tool, specifications, and strategies.</p>
+      <p>All work you submit must be your own or your partnership's.  Collaboration must not result in code that is identifiably similar to other solutions, past or present.</p>
+
+       <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>Encouraged Collaboration</th>
+            <th>Unacceptable collaboration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="green">Sharing high-level design strategies, e.g., helper function organization or data structure choices</td>
+            <td class="red">Walking through an important piece of code step-by-step, sharing pseudocode, sharing comments</td>
+          </tr>
+          <tr>
+            <td class="green">Helping others understand the spec or project nuances</td>
+            <td class="red">Providing your code as a reference</td>
+          </tr>
+          <tr>
+            <td class="green">Helping someone debug</td>
+            <td class="red">Debugging someone's code for them</td>
+          </tr>
+          <tr>
+            <td class="green">Explaining a compiler error to someone</td>
+            <td class="red">Fixing a compiler error for someone</td>
+          </tr>
+          <tr>
+            <td class="green">Discussing test strategies</td>
+            <td class="red">Sharing test code to verify someone else's design, even if test cases are not submitted</td>
+          </tr>
+          <tr>
+            <td class="green">Brainstorming edge cases for testing</td>
+            <td class="red">Discussing specifics about what tests exposed instructor bugs on the autograder</td>
+          </tr>
+          <tr>
+            <td class="green">Sharing code provided by the course staff</td>
+            <td class="red"><p>Copying code in whole or in part, even if the code is modified</p>
+                <p>Writing original code for someone else, or paying someone to write your project</p></td>
+          </tr>
+          <tr>
+            <td class="green">Looking at someone else's code to understand concepts</td>
+            <td class="red">Sharing your code in a way that could be copied, e.g., sending code over email or taking a picture of code</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p>You are still responsible for following these rules even after finishing the course.</p>
+      <p>If you are unsure about what constitutes an honor code violation, please contact the course staff with questions.</p>
+
+      <h3 id="code-reuse">Code reuse <a href="#code-reuse"><i class="small linkify icon"></i></a></h3>
+      <p>If you are retaking the course, you may reuse your own code, provided it was wholly written according to rules outlined in this syllabus. It is possible for instructors to miss an honor code violation in a previous term, but catch and report it when the code is reused.</p>
+
+      <h3 id="code-publishing">Code publishing <a href="#code-publishing"><i class="small linkify icon"></i></a></h3>
+      <p>You may not make your code publicly available in any form, for example in a public GitHub repository or personal website.  You are still responsible for following these rules even after finishing the course.</p>
+
+      <h3 id="honor-council-process">Honor Council Process <a href="#honor-council-process"><i class="small linkify icon"></i></a></h3>
+      <p>We report suspected violations to the Engineering Honor Council. To identify violations, we use both manual inspection and automated software to compare present solutions with each other, with past solutions, and with code found online. The Honor Council determines whether a violation of academic standards has occurred, as well as any sanctions. Read the <a href="https://ecas.engin.umich.edu/honor-council/" target="_blank">Honor Code</a> for detailed definitions of cheating, plagiarism, and other forms of academic misconduct.</p>
+      <p>Here's what you can expect if you are reported for an honor council violation:</p>
+      <ul>
+        <li>The EECS 280 instructors submit an official report to the honor council.</li>
+        <li>The honor council notifies you of the report, and explains the next steps of the process.  You receive a copy of the report, including the evidence of the suspected violation.</li>
+        <li>The course instructors play no role in adjudicating reported cases.</li>
+        <li>The honor council notifies course instructors when your case is resolved. Any penalties they prescribe are applied to your grade. If you are found not responsible, your grade is unaffected.</li>
+      </ul>
+      <p>If you have a pending honor council case at the end of the term, you receive an "I" (incomplete) grade until the case is resolved.  We will send you a grade projection via email to help with planning.  Your grade is updated once the case is resolved. The "I" should not remain on your transcript.</p>
+
+      <h2 id="accommodations">Accommodations for Students with Disabilities <a href="#accommodations"><i class="small linkify icon"></i></a></h2>
+      <p>If you think you need an accommodation for a disability, please let your instructor know during the first three weeks of the semester.  Some aspects of this course may be modified to facilitate your participation and progress. As soon as you make us aware of your needs, we can work with the Services for Students with Disabilities (SSD) office to help us determine appropriate academic accommodations. SSD (734-763-3000; <a href="http://ssd.umich.edu" target="_blank">http://ssd.umich.edu</a>) typically recommends accommodations through a Verified Individualized Services and Accommodations (VISA) form. Any information you provide is private and confidential and will be treated as such.</p>
+
+      <h2 id="recordings">Recordings <a href="#recordings"><i class="small linkify icon"></i></a></h2>
+      <p>Course lectures may be audio/video recorded and made available to other students in this course. As part of your participation in this course, you may be recorded. If you do not wish to be recorded, please contact your <a href="#instructors">instructor</a> the first week of class to discuss alternative arrangements.</p>
+      <p>Students may not record or distribute any class activity without written permission from the instructor, except as necessary as part of approved accommodations for students with disabilities. Any approved recordings may only be used for the student’s own private use.</p>
+
+      <h2 id="commitment-to-equal-opportunity">Commitment to Equal Opportunity <a href="#commitment-to-equal-opportunity"><i class="small linkify icon"></i></a></h2>
+      <p>As indicated in the <a href="https://bulletin.engin.umich.edu/rules/#generalstandardsofconductforengineeringstudents" target="_blank">General Standards of Conduct for Engineering Students</a>, we are committed to a policy of equal opportunity for all persons and do not discriminate on the basis of race, color, national origin, age, marital status, sex, sexual orientation, gender identity, gender expression, disability, religion, height, weight, or veteran status. Please feel free to contact us with any problem, concern, or suggestion. We ask that all students treat each other with respect.</p>
+
+      <h2 id="students-mental-health-and-well-being">Students' Mental Health and Well-being <a href="#students-mental-health-and-well-being"><i class="small linkify icon"></i></a></h2>
+      <p>University of Michigan is committed to advancing the mental health and well-being of its students. If you or someone you know is feeling overwhelmed, depressed, and/or in need of support, services are available. For help, contact Counseling and Psychological Services (CAPS) at (734) 764-8312 and <a href="https://caps.umich.edu" target="_blank">https://caps.umich.edu</a> during and after hours, on weekends and holidays, or through its counselors physically located in schools on both North and Central Campus. You may also consult University Health Service (UHS) at (734) 764-8320 and <a href="https://www.uhs.umich.edu/mentalhealthsvcs" target="_blank">https://www.uhs.umich.edu/mentalhealthsvcs</a>, or for alcohol or drug concerns, see www.uhs.umich.edu/aodresources. For a listing of other mental health resources available on and off campus, visit: <a href="https://caps.umich.edu/article/um-mental-health-resources" target="_blank">https://caps.umich.edu/article/um-mental-health-resources</a>.</p>
+
+      <h2 id="research-disclosure">Research Disclosure <a href="#research-disclosure"><i class="small linkify icon"></i></a></h2>
+      <p>Your class work might be used for research purposes. No identifying information about you or your work will be published. For example, we may use anonymized student assignments to design algorithms or build tools to help programmers. Or we might survey responses to help us improve the course and better understand instructional techniques. Any student who wishes to opt out can contact the course staff (<a href="mailto:eecs280staff@umich.edu">eecs280staff@umich.edu</a>) at any time up to seven days after final grades have been issued. This has no impact on your grade in any manner.</p>
+
+      <div class="ui section divider"></div>
+    </div><!-- ui text container -->
+  </div>
+
+  <footer>
+    <div class="ui inverted menu">
+    </div>
+  </footer>
+
+</body>
+</html>
