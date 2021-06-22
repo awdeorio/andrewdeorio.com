@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+# Update publications list in index.html using Bibble.
+
+# Stop on errors
+set -Eeuo pipefail
+
+# Sanity checks
+if ! grep -q "BEGIN BIBBLE" html/index.html; then
+  echo "Error: can't find 'BEGIN BIBBLE' in html/index.html"
+  exit 1
+fi
+if ! grep -q "END BIBBLE" html/index.html; then
+  echo "Error: can't find 'END BIBBLE' in html/index.html"
+  exit 1
+fi
+
+# Print commands
+set -x
+
+# Copy everything up to and including "BEGIN BIBBLE"
+sed '/BEGIN BIBBLE/q' html/index.html > html/index.html.tmp
+
+# Generate new publications list and insert
+bibble publications_database.bib publications_template.html >> html/index.html.tmp
+
+# Copy everything after and including "END BIBBLE"
+sed -ne '/END BIBBLE/,$ p' html/index.html  >> html/index.html.tmp
+
+# Clean up
+mv html/index.html.tmp html/index.html
