@@ -11,27 +11,8 @@ Source code for [andrewdeorio.com](http://andrewdeorio.com)
 
 
 ## Deploy
-Generate the publications list with [Bibble](https://github.com/sampsyo/bibble).  Insert the output in `docs/index.html`.
 ```console
-$ ./publications_run_bibble.sh
+$ ./build
+$ ./test
+$ ./deploy
 ```
-
-Verify HTML5 compliance.
-```console
-$ html5validator --root docs
-```
-
-Check for dead links.
-```console
-$ linkchecker --check-extern docs/index.html
-```
-
-Copy to web server.
-```console
-find . -type f -exec chmod 644 {} \;
-find . -type d -exec chmod 755 {} \;
-rsync -rvp --delete --checksum docs/ awdeorio@web.eecs.umich.edu:public_html/
-```
-
-### Automated deploy
-FIXME
