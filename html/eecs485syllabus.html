@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EECS 485">
+  <meta name="keywords" content="EECS485, EECS 485, Web Systems, Syllabus">
+  <title>EECS 485 Syllabus</title>
+
+  <!-- Fomantic UI CSS library https://fomantic-ui.com/introduction/getting-started.html#using-a-cdn-provider --> 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+</head>
+
+<body>
+  <!-- Main page  -->
+  <div class="pusher">
+    <div class="ui text container">
+
+      <h1>EECS 485: Web Systems Syllabus</h1>
+      <p><i>The University of Michigan, Fall 2021</i></p>
+      <p>A holistic course of modern web systems and technologies, covering front end and back end.  Build an Instagram clone in the first half of the semester and a Google clone in the second.</p>
+
+      <h2 id="instructors">Instructors <a href="#instructors"><i class="small linkify icon"></i></a></h2>
+      <table>
+        <tr><td>Andrew DeOrio &lt;<a href="mailto:awdeorio@umich.edu">awdeorio@umich.edu</a>&gt;</td></tr>
+      </table>
+
+      <h2 id="in-person-and-remote-instruction">In-person and Remote Instruction <a href="#in-person-and-remote-instruction"><i class="small linkify icon"></i></a></h2>
+      <p>We are planning for as much in-person instruction as we can safely provide, in line with <a href="https://campusblueprint.umich.edu/fall-term-plan/" target="_blank">University</a> and <a href="https://covid-19.engin.umich.edu/" target="_blank">College of Engineering</a> guidelines.</p>
+
+      <p><b>Lectures</b> will be mostly live and in-person.  One of Prof. DeOrio's sections will be asynchronous, with short videos released each week.  Prof. DeOrio will host Lecture Q&A sessions to discuss the videos. You may attend any lecture section or watch any of the recordings, even if it's different than your registered section. We don't take attendance in lecture.  If COVID guidelines preclude large in-person lectures, we will convert in-person lectures to live Zoom lectures at the same day and time.</p>
+
+      <p><b>Projects</b> will be completed in groups and turned in to an autograder.  You can find a group using the "Search For Teammates" post on Piazza. If you'd like, we'll help you find a group.</p>
+
+      <p><b>Labs</b> will be live and in-person.  Expect hands-on practice with concepts from lecture and project introduction material.</p>
+
+      <p><b>Exams</b> will be <a href="./#schedule">scheduled</a> and timed.  We plan on in-person exams.</p>
+
+      <p><b>Office hours</b> will be live and in-person, both one-on-one and in groups.  We may offer some remote office hours.</p>
+
+      <h3 id="computer-and-network-recommendations">Computer and network recommendations</h3>
+      <p>Make sure you have a laptop consistent with <a href="https://caen.engin.umich.edu/percomps/" target="_blank">CAEN recommendations</a>.</p>
+      <p>Test your internet connection with the <a href="http://umich.speedtestcustom.com" target="_blank">U-M Custom Speedtest website</a> and make sure it meets the <a href="https://caenfaq.engin.umich.edu/connect/network-bandwidth-to-use-campus-resources-from-home" target="_blank">minimum requirements for any UM service</a>.  You'll need more bandwidth if there will be multiple simultaneous users in your household.</p>
+      <p>Those working remotely from China may need to use <a href="https://www.cactusvpn.com/beginners-guide-to-vpn/vpn-obfuscation/" target="_blank">VPN obfuscation</a>, also called <a href="https://www.vpnuniversity.com/learn/stealth-vpn" target="_blank">strong or stealth VPN</a>.  Students in the past have had trouble downloading files from Google Drive without VPN obfuscation.</p>
+      <p>Resources for help with computing equipment:</p>
+      <ul>
+        <li>Information and Technology Services (ITS) <a href="https://its.umich.edu/computing/computers-software/sites-at-home" target="_blank">Laptop loaner program</a></li>
+        <li>College of Engineering (CoE) <a href="https://studentaffairs.engin.umich.edu/" target="_blank">Office of Student Affairs</a>, email requests to <a href="mailto:coe-studentaffairs@umich.edu" target="_blank">coe-studentaffairs@umich.edu</a></li>
+      </ul>
+
+      <h2 id="overview">Overview <a href="#overview"><i class="small linkify icon"></i></a></h2>
+      <p>EECS 485 integrates concepts from multiple computer science disciplines used in web applications ("front end"), web services ("back end") and web semantics.  Within these three themes, the course covers concepts such as:</p>
+      <table class="ui three column celled table">
+        <thead>
+          <tr>
+            <th>Web Applications</th>
+            <th>Web Distributed Systems</th>
+            <th>Web Semantics</th>
+          </tr>
+        </thead>
+        <tbody class="top aligned">
+          <tr>
+            <td>
+              <ul class="ui relaxed list">
+                <li>Static pages</li>
+                <li>Server-side dynamic pages</li>
+                <li>Client-side dynamic pages</li>
+                <li>Sessions</li>
+                <li>REST APIs</li>
+                <li>Security</li>
+              </ul>
+              <td>
+                <ul class="ui relaxed list">
+                  <li>Cloud computing: IaaS, PaaS, and SaaS</li>
+                  <li>Parallel programming</li>
+                  <li>Distributed databases</li>
+                  <li>Distributed file systems</li>
+                  <li>DNS</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="ui relaxed list">
+                  <li>Text analysis for web search</li>
+                  <li>Link analysis for web search</li>
+                  <li>Recommender systems</li>
+                  <li>Ads and Auctions</li>
+                </ul>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Students build a social media application similar to Instagram or Facebook and a search engine like Google or Bing.  They gain experience with practical web technologies such as:</p>
+      <table class="ui two column celled table">
+        <tbody class="top aligned">
+          <tr>
+            <td>
+              <ul class="ui relaxed list">
+                <li>HTML and CSS</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Flask (server-side dynamic pages)</li>
+                <li>React (client-side dynamic pages)</li>
+              </ul>
+              <td>
+                <ul class="ui relaxed list">
+                  <li>Amazon Web Services (AWS)</li>
+                  <li>SQL</li>
+                  <li>Version control with Git</li>
+                  <li>Shell scripting</li>
+                  <li>Linux system administration</li>
+                </ul>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="objectives">Objectives <a href="#objectives"><i class="small linkify icon"></i></a></h3>
+      <p>By the end of this course, successful students will feel comfortable  learning a new web technology independently using developer documentation.  They will able to:</p>
+      <table class="ui three column celled table">
+        <tbody class="top aligned">
+          <tr>
+            <td>
+              <ul class="ui relaxed list">
+                <li>Design and implement a web application</li>
+                <li>Balance the trade-offs between static pages, server-side dynamic pages and client-side dynamic pages</li>
+                <li>Use JavaScript and asynchronous programming to invoke remote procedure calls in web user interfaces</li>
+                <li>Use JSON for messaging and data exchange</li>
+              </ul>
+              <td>
+                <ul class="ui relaxed list">
+                  <li>Design and implement a parallel program using processes, threads and sockets</li>
+                  <li>Process web data using a parallel compute framework such as MapReduce</li>
+                  <li>Use IaaS and PaaS to scale a web application</li>
+                  <li>Balance the trade-offs of different distributed databases and distributed file systems</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="ui relaxed list">
+                  <li>Design and implement a pipeline of MapReduce programs to build a web search inverted index</li>
+                  <li>Rank search results using text and link analysis</li>
+                  <li>Balance the trade-offs of different auction mechanisms for web ad sales</li>
+                  <li>Describe how web recommendations are made</li>
+                  <li>Describe the societal impact of web technology</li>
+                </ul>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="prerequisites">Prerequisites <a href="#prerequisites"><i class="small linkify icon"></i></a></h2>
+      <p>The prerequisite for EECS 485 is EECS 281.</p>
+      <p>This course requires substantial independent learning. We'll provide you with a starting point, but expect to learn independently a lot of HTML, CSS, SQL, Python, and Javascript.</p>
+
+      <h2 id="textbook">Textbook <a href="#textbook"><i class="small linkify icon"></i></a></h2>
+      <p>There is no textbook.</p>
+
+      <h2 id="communication">Communication <a href="#communication"><i class="small linkify icon"></i></a></h2>
+      <p><a href="." target="_blank">eecs485.org</a> links to all course resources and is required reading.</p>
+      <p><a href="https://piazza.com/" target="_blank">Piazza</a> is the course discussion forum, best for technical questions and project updates.  Do not publicly post your code.</p>
+      <p><a href="mailto:eecs485staff@umich.edu">eecs485staff@umich.edu</a> reaches the course staff, best for non-technical questions.</p>
+      <p><a href="#instructors">Individual professor</a> email addresses are best for confidential matters.</p>
+
+      <h2 id="exams">Exams <a href="#exams"><i class="small linkify icon"></i></a></h2>
+      <p>There will be one midterm and one final examination.  Exam dates are posted on <a href="../#schedule" target="_blank">eecs485.org</a>.  There will be no make-up exams.  It is your responsibility to verify you can attend both exams.</p>
+
+      <h2 id="labs">Labs <a href="#labs"><i class="small linkify icon"></i></a></h2>
+      <p>Labs will contain hands-on practice with concepts from lecture and helpful project introduction material.</p>
+
+      <h2 id="projects">Projects <a href="#projects"><i class="small linkify icon"></i></a></h2>
+      <p>This course contains 5 programming projects.  The first three focus on web apps, while the last two focus on web distributed systems and web semantics.</p>
+      <p>Project 1: Templated Static Site Generator.  An Instagram clone implemented with a templated static site generator.</p>
+      <p>Project 2: Server-side Dynamic Pages.  An Instagram clone implemented with server-side dynamic pages.</p>
+      <p>Project 3: Client-side Dynamic Pages.  An Instagram clone implemented with client-side dynamic pages.</p>
+      <p>Project 4: MapReduce.  A single machine, multi-process, multi-threaded server that executes user-submitted MapReduce jobs.</p>
+      <p>Project 5: Search Engine.  A scalable search engine similar to Google or Bing.</p>
+
+      <h3 id="project-partnerships">Project Partnerships <a href="#project-partnerships"><i class="small linkify icon"></i></a></h3>
+      <p>Project 1 is independent.  The remaining projects are completed in groups of 2-3.</p>
+      <p>You may modify group membership between projects. You must not modify group membership during a project. In exceptional cases, you may request group dissolution via email to the faculty. If the dissolution is granted, all group members may use previously shared code and no group member may join another group for remainder of the project.</p>
+      <p>Each group turns in one solution to the autograder. You must register your group on the autograder. All group members earn the same grade on a project.  We may adjust the grades of students who substantially under-participate based on feedback from their group members.</p>
+      <p>For those retaking the course: if you submitted an assignment in a previous term, you must not partner on that same assignment this term.</p>
+
+      <h3 id="project-grading">Project Grading <a href="#project-grading"><i class="small linkify icon"></i></a></h3>
+      <p>We use a web-based autograder to evaluate correctness and style.</p>
+      <p>Before the deadline, you may submit up to 3 times per day. After each submission, the autograder shows the results of the public tests released with the project.</p>
+      <p>After the deadline, the autograder shows the results of private tests.</p>
+      <p>Your final project score is a combination of public and private tests.  We use the submission that received the combined best score. If multiple submissions share the best score, we grade the last.</p>
+
+      <h2 id="grades">Grades <a href="#grades"><i class="small linkify icon"></i></a></h2>
+      <p>Letter grades are assigned on a curve.  In general, our goal is be consistent with <a href="https://atlas.ai.umich.edu/course/EECS%20485/" target="_blank">past semesters</a>.</p>
+
+      <p>We calculate your total weighted score using these weights.</p>
+      <table class="ui celled striped table">
+        <thead>
+          <tr>
+            <th>Assignment</th>
+            <th>Percentage of Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Programming Projects</td>
+            <td>5 projects x 10% each = 50%</td>
+          </tr>
+          <tr>
+            <td>Midterm Exam</td>
+            <td>25%</td>
+          </tr>
+          <tr>
+            <td>Final Exam</td>
+            <td>25%</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="curve">Curve <a href="#curve"><i class="small linkify icon"></i></a></h3>
+      <p>Sometimes the difficulty of exams varies from semester to semester.  We use a curve to maintain consistent letter grades despite exam variation.  In general, our goal is be consistent with <a href="https://atlas.ai.umich.edu/course/EECS%20485/" target="_blank">past semesters</a>, where a median grade is 3.3 (B+).</p>
+
+      <h3 id="minimum-scores">Minimum scores <a href="#minimum-scores"><i class="small linkify icon"></i></a></h3>
+      <p>You are guaranteed to pass EECS 485 with a C or better if your total weighted project score is at least 73.0%, and your total weighted exam score is within two standard deviations of the mean.</p>
+
+      <h3 id="deadlines">Deadlines and Extensions<a href="#deadlines"><i class="small linkify icon"></i></a></h3>
+      <p>We do not accept late work.</p>
+      <p>We will consider extension requests made at least two weeks in advance, for example, for religious holidays or planned medical procedures.</p>
+      <p>For medical or personal emergencies we will consider exceptions on a case-by-case basis. Please provide documentation of the emergency.</p>
+
+      <h3 id="regrades">Regrades <a href="#regrades"><i class="small linkify icon"></i></a></h3>
+      <p>Exams are graded by hand.  Request a regrade via Gradescope.  Your score may go up or down.</p>
+      <p>Projects are automatically graded. We do not accept regrade requests.</p>
+      <p>In all cases regrade requests are due no later than 7 days after a grade is released unless a shorter deadline is specified.</p>
+
+      <h2 id="academic-integrity">Academic Integrity <a href="#academic-integrity"><i class="small linkify icon"></i></a></h2>
+      <p>We encourage collaboration in EECS 485, especially on concepts, tool, specifications, and strategies.</p>
+      <p>All work you submit must be your own or your group's.  Collaboration must not result in code that is identifiably similar to other solutions, past or present.</p>
+
+      <p>You are still responsible for following these rules even after finishing the course.</p>
+      <p>If you are unsure about what constitutes an honor code violation, please contact the course staff with questions.</p>
+
+      <h3 id="code-reuse">Code reuse <a href="#code-reuse"><i class="small linkify icon"></i></a></h3>
+      <p>If you are retaking the course, you may reuse your own code, provided it was wholly written according to rules outlined in this syllabus. It is possible for instructors to miss an honor code violation in a previous term, but catch and report it when the code is reused.</p>
+
+      <h3 id="code-publishing">Code publishing <a href="#code-publishing"><i class="small linkify icon"></i></a></h3>
+      <p>You may not make your code publicly available in any form, for example, in a public GitHub repository or personal website.  You are still responsible for following these rules even after finishing the course.</p>
+      <p>If you are recruiting and would like to show companies your work in EECS 485, our recommendation is to create a Git repository with only a README file and no code.  Take a screenshots of your solution put those in the README.  Include a description of the languages, libraries, frameworks, and technologies you used.  Another option is to privately demo or send your code to a recruiter.</p>
+
+      <h2 id="recordings">Recordings <a href="#recordings"><i class="small linkify icon"></i></a></h2>
+      <p>Course lectures may be audio/video recorded and made available to other students in this course. As part of your participation in this course, you may be recorded. If you do not wish to be recorded, please contact your <a href="#instructors">instructor</a> the first week of class to discuss alternative arrangements.</p>
+      <p>Students may not record or distribute any class activity without written permission from the instructor, except as necessary as part of approved accommodations for students with disabilities. Any approved recordings may only be used for the student’s own private use.</p>
+
+      <h2 id="accommodations">Accommodations for Students with Disabilities <a href="#accommodations"><i class="small linkify icon"></i></a></h2>
+      <p>If you think you need an accommodation for a disability, please let your instructor know during the first three weeks of the semester.  Some aspects of this course may be modified to facilitate your participation and progress. As soon as you make us aware of your needs, we can work with the Services for Students with Disabilities (SSD) office to help us determine appropriate academic accommodations. SSD (734-763-3000; <a href="http://ssd.umich.edu" target="_blank">http://ssd.umich.edu</a>) typically recommends accommodations through a Verified Individualized Services and Accommodations (VISA) form. Any information you provide is private and confidential and will be treated as such.</p>
+
+      <h2 id="commitment-to-equal-opportunity">Commitment to Equal Opportunity <a href="#commitment-to-equal-opportunity"><i class="small linkify icon"></i></a></h2>
+      <p>As indicated in the <a href="https://bulletin.engin.umich.edu/rules/#generalstandardsofconductforengineeringstudents" target="_blank">General Standards of Conduct for Engineering Students</a>, we are committed to a policy of equal opportunity for all persons and do not discriminate on the basis of race, color, national origin, age, marital status, sex, sexual orientation, gender identity, gender expression, disability, religion, height, weight, or veteran status. Please feel free to contact us with any problem, concern, or suggestion. We ask that all students treat each other with respect.</p>
+
+      <h2 id="students-mental-health-and-well-being">Students' Mental Health and Well-being <a href="#students-mental-health-and-well-being"><i class="small linkify icon"></i></a></h2>
+      <p>University of Michigan is committed to advancing the mental health and well-being of its students. If you or someone you know is feeling overwhelmed, depressed, and/or in need of support, services are available. For help, contact Counseling and Psychological Services (CAPS) at (734) 764-8312 and <a href="https://caps.umich.edu" target="_blank">https://caps.umich.edu</a> during and after hours, on weekends and holidays, or through its counselors physically located in schools on both North and Central Campus. You may also consult University Health Service (UHS) at (734) 764-8320 and <a href="https://www.uhs.umich.edu/mentalhealthsvcs" target="_blank">https://www.uhs.umich.edu/mentalhealthsvcs</a>, or for alcohol or drug concerns, see www.uhs.umich.edu/aodresources. For a listing of other mental health resources available on and off campus, visit: <a href="https://caps.umich.edu/article/um-mental-health-resources" target="_blank">https://caps.umich.edu/article/um-mental-health-resources</a>.</p>
+
+      <div class="ui section divider"></div>
+    </div><!-- ui text container -->
+  </div>
+
+  <footer>
+    <div class="ui inverted menu">
+    </div>
+  </footer>
+
+</body>
+</html>
