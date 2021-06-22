@@ -15,7 +15,7 @@ fi
 sed '/BEGIN BIBBLE/q' docs/index.html > docs/index.html.tmp
 
 # Generate new publications list and insert
-bibble awdeorio.bib bibble_template.html >> docs/index.html.tmp
+bibble publications_database.bib publications_template.html >> docs/index.html.tmp
 
 # Copy everything after and including "END BIBBLE"
 sed -ne '/END BIBBLE/,$ p' docs/index.html  >> docs/index.html.tmp
