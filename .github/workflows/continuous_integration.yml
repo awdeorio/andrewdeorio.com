@@ -1,0 +1,40 @@
+# GitHub Continuous Integration Configuration
+#
+# GitHub Action docs:
+# https://docs.github.com/en/free-pro-team@latest/actions
+name: HTML Validation
+
+# Define conditions for when to run this action
+on:
+  pull_request: # Run on all pull requests
+  push: # Run on all pushes to master
+    branches:
+      - master
+
+# A workflow run is made up of one or more jobs.  Each job has an id.
+jobs:
+  check-html:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out latest code using a pre-existing GH action
+      # Docs: https://github.com/actions/checkout
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      # Set up Python using a pre-existing GH action
+      # Docs: https://github.com/actions/setup-python
+      - name: Set up Python
+        uses: actions/setup-python@v2
+
+      # Install dependencies
+      # HACK: CI machine has world writable permissions on lib installs. The
+      # linkchecker program refuses to run.  Fix with chmod.
+      - name: Install dependencies
+        run: |
+          python -m pip install html5validator linkchecker bibble
+          pip show linkchecker | grep Location | awk '{print $2}' | xargs sudo chmod -R o-w
+          sudo apt-get install imagemagick
+
+      # Check HTML
+      - name: Run tests
+        run: ./test
