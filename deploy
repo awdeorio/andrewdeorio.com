@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Deploy andrewdeorio.com source files to static web server
+
+# Stop on errors
+set -Eeuo pipefail
+
+# Test
+./test
+
+# Copy
+rsync \
+  --recursive \
+  --verbose \
+  --delete \
+  --checksum \
+  html/ \
+  awdeorio@web.eecs.umich.edu:public_html/
