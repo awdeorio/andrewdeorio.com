@@ -51,7 +51,7 @@ set -x
 
 # Make sure copyright year is up-to-dat
 YEAR=$(date '+%Y')
-grep -q "&copy; ${YEAR} Andrew DeOrio" html/index.html
+grep -q "&copy; 2009 - ${YEAR} Andrew DeOrio" html/index.html
 
 # Validate HTML
 html5validator --root html
