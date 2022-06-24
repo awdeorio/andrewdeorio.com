@@ -7,7 +7,7 @@ set -Eeuo pipefail
 
 # Parse arguments
 if [ "$#" -eq 0 ]; then
-  INDEXHTML="html/index.html"
+  INDEXHTML="docs/index.html"
 elif [ "$#" -eq 1 ]; then
   INDEXHTML="$1"
 else

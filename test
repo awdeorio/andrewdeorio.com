@@ -13,9 +13,9 @@ if [ $(pwd) != "$PROJECT_HOME" ]; then
 fi
 
 # Make sure publications list is up-to-date
-cp html/index.html tmp.html
+cp docs/index.html tmp.html
 ./build tmp.html
-if ! diff -q html/index.html tmp.html > /dev/null; then
+if ! diff -q docs/index.html tmp.html > /dev/null; then
   echo "Error: publications list is out-of-date"
   rm -f tmp.html
   exit 1
@@ -25,7 +25,7 @@ else
 fi
 
 # Verify images are optimized for the web
-IMAGES=$(ls html/assets/images/*)
+IMAGES=$(ls docs/assets/images/*)
 
 # File sizes should not be too big
 for IMAGE in $IMAGES; do
@@ -49,16 +49,16 @@ done
 # Print commands
 set -x
 
-# Make sure copyright year is up-to-dat
+# Make sure copyright year is up-to-date
 YEAR=$(date '+%Y')
-grep -q "&copy; 2009 - ${YEAR} Andrew DeOrio" html/index.html
+grep -q "&copy; 2009 - ${YEAR} Andrew DeOrio" docs/index.html
 
 # Validate HTML
-html5validator --root html
+html5validator --root docs
 
 # Check for bad links
 linkchecker \
   --check-extern \
   --threads 100 \
   --ignore-url=https://umich.instructure.com/ \
-  html
+  docs
