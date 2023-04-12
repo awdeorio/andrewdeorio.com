@@ -15,5 +15,6 @@ Source code for [andrewdeorio.com](http://andrewdeorio.com)
 ```console
 $ ./build
 $ ./test
-$ ./deploy
 ```
+
+Pushing the `main` branch deploys via [GitHub Pages](https://pages.github.com/).
