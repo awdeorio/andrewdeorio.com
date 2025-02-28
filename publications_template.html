@@ -4,13 +4,6 @@
           <div class="header" id="{{entry.key}}">
             {{ entry|title }}
             <a href="#{{entry.key}}"><i class="linkify icon"></i></a>
-            {% if entry.fields.award -%}
-            <div class="ui primary label">
-              <i class="award icon"></i>
-              Award
-              <!-- {{entry.fields.award}} -->
-            </div>
-            {% endif -%}
           </div>
           <div class="description">
             {{ entry.persons['author']|author_list }}. {{ entry|venue_type}} {{ entry|venue }}, {{ entry.fields['month'] }} {{ entry.fields['year'] }}.
@@ -27,6 +20,10 @@
           {% endfor -%}
           {% if entry.fields.award -%}
           | <em>{{entry.fields.award}}</em>
+          <div class="ui primary label">
+            <i class="award icon"></i>
+            Award
+          </div>
           {% endif -%}
           </div><!-- / description -->
         </div><!-- /item -->
