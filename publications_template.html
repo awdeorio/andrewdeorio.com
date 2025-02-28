@@ -12,15 +12,19 @@
           <a href="{{url | escape}}" target="_blank">
             {{ type | escape }}
           </a>
-
-          <!-- <a class="ui primary label" href="{{url | escape}}" target="_blank">
-               <i class="newspaper icon"></i>
-               {{type.title()}}
-               </a> -->
           {% endfor -%}
+
+          {% if entry.fields.press -%}
+          |
+          <div class="ui small blue label">
+            <i class="newspaper icon"></i>
+            Press
+          </div>
+          {% endif -%}
+
           {% if entry.fields.award -%}
           | <em>{{entry.fields.award}}</em>
-          <div class="ui primary label">
+          <div class="ui small yellow label">
             <i class="award icon"></i>
             Award
           </div>
