@@ -3,7 +3,7 @@
         <div class="item">
           <div class="header" id="{{entry.key}}">
             {{ entry|title }}
-            <a href="#{{entry.key}}"><i class="linkify icon"></i></a>
+            <a href="#{{entry.key}}" aria-label="anchor"><i class="linkify icon"></i></a>
           </div>
           <div class="description">
             {{ entry.persons['author']|author_list }}. {{ entry|venue_type}} {{ entry|venue }}, {{ entry.fields['month'] }} {{ entry.fields['year'] }}.
