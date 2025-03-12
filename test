@@ -29,7 +29,7 @@ IMAGES=$(ls docs/assets/images/*)
 
 # File sizes should not be too big
 for IMAGE in $IMAGES; do
-  SIZE=$(du "$IMAGE" | awk '{print $1}')
+  SIZE=$(du -k "$IMAGE" | awk '{print $1}')
   if [ "$SIZE" -ge 100 ]; then
     echo "Error: size exceeds 100 kB ${IMAGE} ${SIZE}"
     exit 1
