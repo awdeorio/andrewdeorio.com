@@ -11,6 +11,9 @@ Source code for [andrewdeorio.com](http://andrewdeorio.com)
 - [Google Analytics](https://analytics.google.com/)
 
 
+## Favicon
+I used https://favicon.io/favicon-generator/ to generate the favicon with background color `#2185d0`, font "Cutive Mono", size 90.
+
 ## Deploy
 ```console
 $ ./build
