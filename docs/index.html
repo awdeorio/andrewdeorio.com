@@ -76,16 +76,29 @@
     >
       <i class="github icon"></i>
     </a>
-    <a
+    <button
       class="ui right floated icon button"
-      aria-label="Email awdeorio@gmail.com"
-      data-tooltip="Email awdeorio@umich.edu"
+      onclick="copyEmail()"
+      aria-label="awdeorio@gmail.com (click to copy)"
+      data-tooltip="awdeorio@umich.edu (click to copy)"
       data-position="bottom right"
       href="mailto:awdeorio@umich.edu"
       target="_blank"
     >
       <i class="ui icon envelope"></i>
-    </a>
+    </button>
+
+    <!-- Copy email code -->
+    <script>
+     function copyEmail() {
+       navigator.clipboard.writeText("awdeorio@umich.edu").then(() => {
+         $('body').toast({
+           message: 'copied',
+           displayTime: 1000
+         });
+       });
+     }
+    </script>
 
     <header>
       <script type="text/javascript">
