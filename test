@@ -61,4 +61,7 @@ linkchecker \
   --check-extern \
   --threads 100 \
   --ignore-url=https://umich.instructure.com/ \
+  --ignore-url=eecs485favicon.ico \
+  --ignore-url=assets/teaching/exams/ \
+  --ignore-url=https://www.uhs.umich.edu/mentalhealthsvcs \
   docs
